@@ -3,19 +3,43 @@
 <head>
 	<title></title>
 	<style>
+		*{
+			font-family: arial;
+
+		}
 		.formulario{
-			background-color: #87CEFA;
-			border-radius: 5px;
-			width: 300px; 
-			height: 300px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			margin: auto;
+			
+			
 		}
+		form{
+			background-color: #87CEFA;
+			border-radius: 10px;
+			width: 300px; 
+			height: 320px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
 
+
+		}
 		.pForm{
 			color: white;
+		}
+		.botao{
+			width: 100px;
+			height: 30px;
+		}
+		.inputForm{
+			transition: all 0.3s;
+			height: 18px;
+		}
+		.inputForm:hover{
+			transform: scale(1.06);
+
 		}
 	</style>
 	<script>
@@ -53,10 +77,10 @@
 		<form>
 			<p style="text-align: center; font-size: 30px; color: white;">Login</p>
 			<p class="pForm">Username:</p>	
-			<input type="text" id="username">
+			<input type="text" id="username" class="inputForm">
 			<p class="pForm">Password:</p>
-			<input type="password" id="password">
-			<button type="button" onclick="check()" class="">Click Me</button>
+			<input type="password" id="password" class="inputForm"><br>
+			<button type="button" onclick="check()" class="botao">Sign in</button>
 		</form>
 	</div>	
 </body>
