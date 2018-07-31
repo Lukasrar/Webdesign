@@ -69,8 +69,10 @@
 
 			for(i = 0; i < accounts.length; i++){
 				if (username == accounts[i].username && password == accounts[i].password) {
+
 					alert(username+" is logged in")
 					return
+
 				}
 			}
 			alert("Incorrect username or password")
@@ -87,6 +89,7 @@
 			<p class="pForm">Password:</p>
 			<input type="password" id="password" class="inputForm"><br>
 			<button type="button" onclick="check()" class="botao">Sign in</button>
+			
 		</form>
 	</div>	
 </body>
