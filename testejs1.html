@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+
+		var coins = document.getElementById("button")
+		var clicksjs = document.getElementById("button")
+		var multiplier = 2;
+		function clicks(){
+			totalCoins.innerHTML = coins+=multiplier;
+			totalClicks.innerHTML = clicksjs++;
+			var rgb1 = Math.round((Math.random()* 255))
+			var rgb2 = Math.round((Math.random()* 255))
+			var rgb3 = Math.round((Math.random()* 255))
+			document.getElementById("button").style.backgroundColor = `rgb(${rgb1}, ${rgb2}, ${rgb3})`; 
+		}
+		function dobrar(){
+			if (coins >= 50) {
+				multiplier++;
+				coins = 0;
+			}
+		}
+	</script>
+	<style>
+		.screen{
+			background-color: lightblue;
+			width: 500px;
+			height: 500px;
+			margin: auto;
+			border-radius: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+		}
+		.botao{
+			width: 150px;
+			height: 150px;
+			border-radius: 10px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div class="screen" id="beleza">
+		<button id="button" onclick="clicks()" class="botao">Click me!</button>
+		<p id="totalCoins">0</p>
+		<p id="totalClicks">0</p>
+		<button id="double" onclick="dobrar()" class="botao">Double your clicks</button>
+	</div>
+
+
+</body>
+</html>
