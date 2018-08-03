@@ -38,10 +38,14 @@
 		.botao{
 			width: 100px;
 			height: 30px;
+			color: black;
+			background-color: pink;
+			border-color: pink;
+			border-radius: 5px
 		}
 		.inputForm{
 			transition: all 0.3s;
-			height: 18px;
+			height: 22px;
 		}
 		.inputForm:hover{
 			transform: scale(1.06);
@@ -71,6 +75,7 @@
 				if (username == accounts[i].username && password == accounts[i].password) {
 
 					alert(username+" is logged in")
+					window.open("https://www.google.com.br/")
 					return
 
 				}
