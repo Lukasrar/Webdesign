@@ -17,8 +17,8 @@
 		}
 		function dobrar(){
 			if (coins >= 50) {
-				multiplier++;
-				coins = 0;
+				multiplier = multiplier *2;
+				coins = coins - 50;
 			}
 		}
 	</script>
@@ -40,13 +40,30 @@
 			border-radius: 10px;
 			color: white;
 		}
+		.screenTotalCLicksP{
+			position: absolute;
+			top: 20px;
+			left: 600px;
+			color: white;
+		}
+		.screenTotalCLicks{
+			position: absolute;
+			top: 45px;
+			left: 600px;
+			color: white;
+		}
+		.colorP{
+			color: white;
+		}
 	</style>
 </head>
 <body>
 	<div class="screen" id="beleza">
 		<button id="button" onclick="clicks()" class="botao">Click me!</button>
-		<p id="totalCoins">0</p>
-		<p id="totalClicks">0</p>
+		<p class="colorP">Total coins:</p>
+		<p id="totalCoins" class="colorP">0</p>
+		<p class="screenTotalCLicksP">Total clicks:</p>
+		<p id="totalClicks" class="screenTotalCLicks">0</p>
 		<button id="double" onclick="dobrar()" class="botao">Double your clicks</button>
 	</div>
 
