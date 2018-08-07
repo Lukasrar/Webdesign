@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		function beInvisible(){
+			document.getElementById("pId").style.visibility = "hidden"
+		}
+		function beVisible(){
+			document.getElementById("pId").style.visibility = "visible"
+			document.getElementById("pId").style.left = "20px"
+		}	
+	</script>
+	<style>
+		.hamburger {
+			font-size: 40px;
+			width: 40px;
+			margin: auto;
+			transition: all 0.4s;
+		}
+		.hamburger:hover{
+			color: lightblue;
+			transform: scale(1.2);
+		}
+		.divP{
+			width: 300px;
+			background-color: #cccccc;
+			position: absolute;
+			left: -300px;
+		}
+	</style>
+</head>
+<body>
+		<p class="hamburger" onmousemove="setTimeout(beVisible, 150)" onmouseout="setTimeout(beInvisible, 150)">&#9776</p>
+		<div id="pId" class="divP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+</html>
