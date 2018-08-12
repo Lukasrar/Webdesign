@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		ul li {
+			text-decoration: none;
+			list-style: none;
+			
+		}
+	</style>
+</head>
+<body>
+	<ul id="messages"></ul>
+	<input id="textBox" type="text">
+	<button id="button">Send</button>
+
+	<script>
+		var messages = document.getElementById("messages");
+		var textBox = document.getElementById("textBox");
+		var button = document.getElementById("button");
+		var name = prompt("What's your name ?");
+
+		button.addEventListener("click", function(){
+			var newMessage = document.createElement("li");
+			newMessage.innerHTML = name+": "+textBox.value;
+			messages.appendChild(newMessage);
+			textBox.value = "";
+		})
+	</script>
+</body>
+</html>
