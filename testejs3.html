@@ -47,11 +47,16 @@
 		<button id="button" class="btn">Send</button>
 	</div>	
 	<script>
+		var name = prompt("What's your name ?");
 		var messages = document.getElementById("messages");
 		var textBox = document.getElementById("textBox");
 		var button = document.getElementById("button");
-		var name = prompt("What's your name ?");
-
+		if(name.length <= 0){
+			while (name.length <= 0){
+				alert("Insert a valid name.");
+				var name = prompt("What's your name ?");
+			}
+		}
 		button.addEventListener("click", function(){
 			var newMessage = document.createElement("li");
 			newMessage.innerHTML = name+": "+textBox.value;
