@@ -6,15 +6,46 @@
 		ul li {
 			text-decoration: none;
 			list-style: none;
-			
+			padding: 3px;
+		}
+		.divScreen{
+			background-color: #cccccc;
+			border-radius: 5px;
+			width: 500px;
+			height: 50px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: auto;
+		}
+		.divMsg{
+			width: 500px;
+			background-color: lightblue;
+			border-radius: 5px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom: 10px;
+			margin-top: 10px;
+		}
+		.btn{
+			background-color: lightblue;
+			border-color: lightblue;
+			width: 100px;
+			height: 25px;
+			color: white;
+			border-radius: 5px;
+			margin: 10px;
 		}
 	</style>
 </head>
 <body>
-	<ul id="messages"></ul>
-	<input id="textBox" type="text">
-	<button id="button">Send</button>
-
+	<div class="divMsg">
+		<ul id="messages"></ul>
+	</div>	
+	<div class="divScreen">	
+		<input id="textBox" type="text" style="width: 70%; height: 20px;">
+		<button id="button" class="btn">Send</button>
+	</div>	
 	<script>
 		var messages = document.getElementById("messages");
 		var textBox = document.getElementById("textBox");
