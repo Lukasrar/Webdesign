@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My engine</title>
+    <style type="text/css">
+    html{
+        background: url(bgs/bg6.jpg) repeat center center fixed;
+    }
+    canvas{
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        border-radius: 10px;
+    }
+    .btnLeft{
+        position: absolute;
+        top: 250px;
+        bottom: 250px;
+        left: 20%;
+        right: 0px;
+        margin: auto;
+        z-index: 0;
+        background-color: #336B87;
+        color: white;
+        border-color: #336B87;
+        border-radius: 10px;
+    }
+    .btnRight{
+        position: absolute;
+        top: 250px;
+        bottom: 250px;
+        left: 75%;
+        right: 0px;
+        margin: auto;
+        z-index: 0;
+        background-color: #336B87;
+        color: white;
+        border-color: #336B87;
+        border-radius: 10px;
+    }
+    .btnJump{
+        position: absolute;
+        top: 710px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        margin: auto;
+        width: 700px;
+        height: 90px;
+        z-index: 1;
+        background-color: #F4CC70;
+        color: white;
+        border-color: #F4CC70;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+    <div c></div>
+    <script type="text/javascript">
+// game  vars
+var canvas, ctx, HEIGHT, WIDTH, frames = 0, maxJumps = 2,
+floor = {
+    y: 550,
+    height: 50,
+    color: "#ffc37d",
+    draw: function(){
+        ctx.fillStyle = this.color;
+        ctx.fillRect(0, this.y, WIDTH, this.height)
+    }
+},
+block = {
+    x: 0,
+    y: 0,
+    height: 50,
+    width: 50,
+    color: "#ff7884",
+    gravity: 1.5,
+    speed: 0,
+    jumpForce: 15,
+    jumps: 0,
+    att: function(){
+        this.speed += this.gravity;
+        this.y += this.speed;
+        if(this.y > floor.y - this.height){
+            this.y = floor.y - this.height;
+            this.jumps = 0;
+        }
+        if (this.x >= anotherBlock.x-40 && this.x<=anotherBlock.x+40){
+            this.y = this.y-anotherBlock.height;
+            this.gravity=9;
+        }else{
+            this.gravity=1.5;
+        }
+// X = 600     obj= 50
+//obj(100) -> 75 125    0-75 125-600
+},
+left: function(){
+    this.x+=20;
+},
+right: function(){
+    this.x-=20;
+},
+jump: function(){
+    if(this.jumps < maxJumps){
+        this.speed = -this.jumpForce;
+        this.jumps++;
+    }
+},
+draw: function(){
+    ctx.fillStyle = this.color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+}
+},
+anotherBlock = {
+    x: 100,
+    y: 0,
+    height: 50,
+    width: 50,
+    color: "#ff7500",
+    gravity: 1.5,
+    speed: 0,
+    jumpForce: 15,
+    jumps: 0,
+    att: function(){
+        this.speed += this.gravity;
+        this.y += this.speed;
+        if(this.y > floor.y - this.height){
+            this.y = floor.y - this.height;
+        }
+
+    },
+    draw: function(){
+        ctx.fillStyle = this.color;
+        ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
+};
+// game functions
+function click(event){
+    block.jump();
+}
+function moveToRight(event){
+    block.left();
+}
+function moveToLeft(event){
+    block.right();
+}
+function main(){
+    HEIGHT = window.innerHeight;
+    WIDTH = window.innerWidth;
+    if(WIDTH >= 500){
+        WIDTH = 600;
+        HEIGHT = 600;
+    }
+    canvas = document.createElement("canvas");
+    canvas.width = WIDTH;
+    canvas.height = HEIGHT;
+    canvas.style.border = "1px solid white";
+    ctx = canvas.getContext("2d");
+    document.body.appendChild(canvas);
+    document.addEventListener("mousedown", click)
+    roda();
+}
+function roda(){
+    att();
+    draw();
+    window.requestAnimationFrame(roda);
+}
+function att(){
+    frames++;
+    block.att();
+    anotherBlock.att();
+}
+function draw(){
+    ctx.fillStyle = "#bae1ff";
+    ctx.fillRect(0, 0, WIDTH, HEIGHT);
+    floor.draw();
+    block.draw();
+    anotherBlock.draw();
+}
+// start the game
+main();
+</script>
+
+<button onclick="moveToLeft()" class="btnLeft">Move to left</button>
+<button onclick="click()" class="btnJump">Jump</button>
+<button onclick="moveToRight()" class="btnRight">Move to Right</button>
+</body>
+</html>
