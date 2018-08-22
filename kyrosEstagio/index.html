@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<link rel="shortcut icon" href="logokyrosrestaurant.png" />
-	<title>Tela de monitoramento</title>
+	<title>Kyros Restaurant</title>
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Ubuntu');
 		@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
@@ -16,9 +16,13 @@
 	    html{
         background: url(bgs/bg2.png) repeat center center fixed;
     	}
+    	.marginTop{
+    		margin-top: 200px
+    	}
     	.logoKyros{
     		width: 250px;
     		padding: 30px;
+    		margin-top: 50px;
     		transition: all 0.3s;
     	}
     	.logoKyros:hover{
@@ -47,6 +51,7 @@
 			border-radius: 5px;
 			width: 30%;
 			height: 50px;
+			margin-top: 40px;
 			transition: all 0.5s;
 		}
 		.cssDivCounter{
@@ -86,9 +91,6 @@
 			transition: all 0.5s; 
 		}
 		.cssBtn{
-			display: flex;
-			justify-content: center;
-			align-items: center;
 			width: 150px;
 			height: 35px;
 			background-color: #EBC13A;
@@ -218,7 +220,7 @@
 </head>
 <body>
 	<div class="alignerPrincipal">
-		<a href="http://www.kyros.com.br/" target="_blank"><img src="logokyrosrestaurant.png" class="logoKyros"></a>
+		<a href="http://www.kyros.com.br/" target="_blank"><img src="logokyrosrestaurant.png" class="alignerPrincipal, logoKyros"></a>
 			<div class="alignerCentral, cssDiv" id="cssDivJs">
 				<div class="cssDivCounter">
 					<p>Pedidos Finalizados:</p>
@@ -232,7 +234,9 @@
 					<p id="quantCliente" class="pDiv"></p>
 					<p id="bebidaCliente" class="pDiv"></p>
 					<p id="pedidosAcabaram" class="pDiv"></p>
-					<button onclick="att()" id="btn" class="cssBtn ">Começar expediente</button>
+					<div class="alignerPrincipal">
+						<button onclick="att()" id="btn" class="cssBtn ">Começar expediente</button>
+					</div>
 			</div>
 	</div>
 </body>	
