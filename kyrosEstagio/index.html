@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tela de monitoramento</title>
+	<style type="text/css">
+		@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+		@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+		*{
+			transition: all 0.3s;
+			font-family: 'Fira Sans', sans-serif;
+		}
+	    html{
+        background: url(bgs/bg2.png) repeat center center fixed;
+    	}
+    	.logoKyros{
+    		width: 250px;
+    		padding: 30px;
+    	}
+		.alignerPrincipal {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			/*border: 1px solid red;*/
+		}
+		.alignerCentral {
+		  	max-width: 50%;
+		  /*	border: 1px solid red;*/
+		}
+		.alignerCentral-Top {
+		  	align-self: flex-start;
+		}
+		.cssDiv{
+			position: fixed;
+			top: 320px;
+			background-color: #46211A;
+			padding: 20px;
+			border-radius: 5px;
+			width: 25%;
+			height: 50px;
+		}
+		.pDiv{
+			color: white;
+			padding: 0px;
+			border-radius: 5px;
+			background-color: #BA5536; 
+		}
+		.cssBtn{
+			width: 150px;
+			height: 35px;
+			margin-left: 30%;
+			margin-right: 30%;
+			background-color: #DE7A22;
+			border-color: #DE7A22;
+			border-radius: 5px;
+		}
+		.cssBtn:hover{
+			transform: scale(1.090);
+			background-color: #8D230F;
+			border-color: #8D230F;
+		}
+	</style>
+	<script type="text/javascript">
+		pedidos = [
+		{
+			numeroMesa: 04,
+			aperitivos: "Porção de batata frita grande",
+			lanche: "X-TUDO",
+			descricao: "Sem tomate com carne em dobro",
+			quantidade: 2,
+			bebida: "Coca-cola zero 2 Litros",
+
+		},
+		{
+			numeroMesa: 10,
+			aperitivos: "Porção de tilápia grande",
+			lanche: "Pizza de calabresa",
+			descricao: "Borda de catupiry adicional",
+			quantidade: 2,
+			bebida: "Coca-cola 2 Litros",
+		},
+		{
+			numeroMesa: 11,
+			aperitivos: "Nenhum aperitivo",
+			lanche: "Cheese burguer",
+			descricao: "Queijo cheedar adicional",
+			quantidade: 1,
+			bebida: "Sprite lata",
+		},
+		{
+			numeroMesa: 20,
+			aperitivos: "Porção de aneis de cebola",
+			lanche: "Cachorro quente com purê ",
+			descricao: "Salsicha adicional",
+			quantidade: 1,
+			bebida: "Coca-cola lata",
+		},
+		{
+			numeroMesa: "",
+			aperitivos: "",
+			lanche: "",
+			descricao: "",
+			quantidade: "",
+			bebida: "",
+		},
+		]
+		var totalPedidos = pedidos.length;
+		var filaPedidos = 0;
+		function att(){
+			 //Atribuindo px de heigth ao div 
+				document.getElementById("cssDivJs").style.height = "390px";
+			 //Atribuindo px de padding ao p 
+				document.getElementById("mesaCliente").style.padding = "10px";
+				document.getElementById("aperitivoCliente").style.padding = "10px";
+				document.getElementById("lancheCliente").style.padding = "10px";
+				document.getElementById("descricaoCliente").style.padding = "10px";
+				document.getElementById("quantCliente").style.padding = "10px";
+				document.getElementById("bebidaCliente").style.padding = "10px";
+
+
+			//Escrevendo no documento HTML os pedidos
+				document.getElementById("mesaCliente").innerHTML = "Mesa numero: "+pedidos[filaPedidos].numeroMesa;
+				document.getElementById("aperitivoCliente").innerHTML = "Aperitivos: "+pedidos[filaPedidos].aperitivos;
+				document.getElementById("lancheCliente").innerHTML = "Lanche: "+pedidos[filaPedidos].lanche;
+				document.getElementById("descricaoCliente").innerHTML = "Descrição do pedido: "+pedidos[filaPedidos].descricao;
+				document.getElementById("quantCliente").innerHTML = "Quantidade: "+pedidos[filaPedidos].quantidade;
+				document.getElementById("bebidaCliente").innerHTML = "Bebida: "+pedidos[filaPedidos].bebida;
+			//Mudando texto botão de "Começar expediente" para "Proximo pedido"
+				document.getElementById("btn").innerHTML = "Proximo pedido";
+			//Mundando texto botão de "Proximo pedido" para "Finalizar pedidos"
+			filaPedidos++
+			if (filaPedidos == totalPedidos-1) {
+				document.getElementById("btn").innerHTML = "Finalizar pedidos";
+
+			}
+			//Finalizando pedidos
+			else if (filaPedidos == totalPedidos){
+			//Retirando px de heigth ao div 
+				document.getElementById("cssDivJs").style.height = "50px";	
+			//Atribuindo px de padding ao p 	
+				document.getElementById("pedidosAcabaram").style.padding = "10px";
+			 //Zerando px de padding ao p 	
+				document.getElementById("mesaCliente").style.padding = "0px";
+				document.getElementById("aperitivoCliente").style.padding = "0px";
+				document.getElementById("lancheCliente").style.padding = "0px";
+				document.getElementById("descricaoCliente").style.padding = "0px";
+				document.getElementById("quantCliente").style.padding = "0px";
+				document.getElementById("bebidaCliente").style.padding = "0px";
+			//Finalizando pedidos	
+				document.getElementById("mesaCliente").innerHTML = "";
+				document.getElementById("aperitivoCliente").innerHTML = "";
+				document.getElementById("lancheCliente").innerHTML = "";
+				document.getElementById("descricaoCliente").innerHTML = "";
+				document.getElementById("quantCliente").innerHTML = "";
+				document.getElementById("bebidaCliente").innerHTML = "";
+				document.getElementById("pedidosAcabaram").innerHTML = "Os pedidos acabaram ";
+				document.getElementById("btn").style.visibility = "hidden";
+			}
+		}
+	</script>
+</head>
+<body class="alignerPrincipal">
+	<img src="logokyrosrestaurant.png" class="logoKyros">
+	<div class="alignerCentral, cssDiv" id="cssDivJs">
+		<p id="mesaCliente" class="pDiv"></p>
+		<p id="aperitivoCliente" class="pDiv"></p>
+		<p id="lancheCliente" class="pDiv"></p>
+		<p id="descricaoCliente" class="pDiv"></p>
+		<p id="quantCliente" class="pDiv"></p>
+		<p id="bebidaCliente" class="pDiv"></p>
+		<p id="pedidosAcabaram" class="pDiv"></p>
+		<button onclick="att()" id="btn" class="cssBtn ">Começar expediente</button>
+	</div>
+</body>	
+</html>

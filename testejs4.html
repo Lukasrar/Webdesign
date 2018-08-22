@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+
+		}
+		.divLogin{
+			
+						display: flex;
+			align-items: center;
+			justify-content: center;
+			
+		}
+		form{
+			border-radius: 10px;
+			width: 300px; 
+			height: 320px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-top: 200px;
+		}
+	</style>
+
+	<script type="text/javascript">
+		var contas = [
+		{
+			username: "lukas",
+			password: "lukas"
+		}
+
+		]
+
+		function validar(){
+			var username = document.getElementById("username").value;
+			var password = document.getElementById("password").value;
+			for(i = 0; i<contas.length; i++){
+				if (username == contas[i].username && password == contas[i].password){
+					alert("Voce logou")
+				}else{
+					alert("Senha incorreta")
+				}
+			}
+		}
+	</script>
+	
+</head>
+<body>
+	<div class="divLogin">
+		<form>
+			<input type="text" id="username" placeholder="Insert your username"><br>
+			<input type="password" id="password" placeholder="Insert your password">
+			<input type="submit" onclick="validar()">
+		</form>
+	</div>
+</body>
+</html>
