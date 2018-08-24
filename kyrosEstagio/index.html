@@ -105,6 +105,7 @@
 		}
 	</style>
 	<script type="text/javascript">
+		//vetor de pedidos
 		pedidos = [
 		{
 			numeroMesa: 04,
@@ -148,15 +149,16 @@
 			bebida: "",
 		},
 		]
+		//variaveis de manipulação
 		var totalPedidos = pedidos.length;
 		var filaPedidos = 0;
 		var pedidosFinalizados = -1;
+		//função principal
 		function att(){
 			 //Atribuindo valor ao id counterJS
 			 if (pedidosFinalizados <= totalPedidos-2) {
 				pedidosFinalizados++;
 			 }
-			 
 			 document.getElementById("counterJS").innerHTML = pedidosFinalizados
 
 			 //Atribuindo px de heigth ao div 
@@ -177,12 +179,12 @@
 				document.getElementById("descricaoCliente").innerHTML = "Descrição do pedido: "+pedidos[filaPedidos].descricao;
 				document.getElementById("quantCliente").innerHTML = "Quantidade: "+pedidos[filaPedidos].quantidade;
 				document.getElementById("bebidaCliente").innerHTML = "Bebida: "+pedidos[filaPedidos].bebida;
+
 			//Mudando texto botão de "Começar expediente" para "Proximo pedido"
 				document.getElementById("btn").innerHTML = "Proximo pedido";
 
 			//Mundando texto botão de "Proximo pedido" para "Finalizar pedidos"
 			filaPedidos++
-
 			if (filaPedidos == totalPedidos-1) {
 				document.getElementById("btn").innerHTML = "Finalizar pedidos";
 
@@ -192,8 +194,10 @@
 			else if (filaPedidos == totalPedidos){
 			//Retirando px de heigth ao div 
 				document.getElementById("cssDivJs").style.height = "50px";	
+
 			//Atribuindo px de padding ao p 	
 				document.getElementById("pedidosAcabaram").style.padding = "10px";
+
 			 //Zerando px de padding ao p 	
 				document.getElementById("mesaCliente").style.padding = "0px";
 				document.getElementById("aperitivoCliente").style.padding = "0px";
@@ -201,6 +205,7 @@
 				document.getElementById("descricaoCliente").style.padding = "0px";
 				document.getElementById("quantCliente").style.padding = "0px";
 				document.getElementById("bebidaCliente").style.padding = "0px";
+
 			//Finalizando pedidos	
 				document.getElementById("mesaCliente").innerHTML = "";
 				document.getElementById("aperitivoCliente").innerHTML = "";
@@ -213,6 +218,7 @@
 				document.getElementById("btnReset").style.visibility = "visible";
 			}
 		}
+		//função que reseta a página
 		function reset(){
 			window.open("index.html" , "_self")
 		}
