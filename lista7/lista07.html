@@ -81,7 +81,9 @@
           total1 += "0";
   			}
   		}
-  		valores[pos] = parseFloat(total1);   
+  		valores[pos] = parseFloat(total1);
+      operando1Final = valores[0];
+      operando2Final = valores[1];   
   	}
 
     function operacao(operador) {
@@ -107,10 +109,7 @@
           document.getElementById("txtResultado").value = '';
         break;
       	}
-        operando1Final = valores[0];
-        operando2Final = valores[1];
    		}  
-      
   	</script>
 	<title></title>
 </head>
@@ -155,7 +154,7 @@
     	<td><button id="btn+/-">+/-</button></td> 
     	<td><button id="btn.">.</button></td>
     	<td><button onclick="operacao('+')">+</button></td>
-    	<td><button id="btn=">=</button></td>
+    	<td><button id="btn=" onclick="btnResultado()">=</button></td>
  	</tr>
 	</table>
 </div>		
