@@ -58,63 +58,75 @@
      total2 = "";
      valores = [2];
 	   lengthVisor = 0;
-     ultimaTecla = "";
+     posTecla = 0;
+     ultimaTecla = [];
   	function pegarValores1(numero){
   		
   		lengthVisor++;
 
   		if (lengthVisor <= 8) {
   			if (numero == 'btn7') {
-  				 tecla = 7;
+  				tecla = 7;
+          ultimaTecla = 7;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "7";
   			}else if (numero == 'btn8') {
-  				 tecla = 8;
+  				tecla = 8;
+          ultimaTecla = 8;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "8";
   			}
   			else if (numero == 'btn9') {
-  				 tecla = 9;
+  				tecla = 9;
+          ultimaTecla = 9;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "9";
   			}
   			else if (numero == 'btn4') {
-  				 tecla = 4;
+  				tecla = 4;
+          ultimaTecla = 4;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "4";
   			}
   			else if (numero == 'btn5') {
-  				 tecla = 5;
+  				tecla = 5;
+          ultimaTecla = 5;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "5";
   			}
   			else if (numero == 'btn6') {
-  				 tecla = 6;
+  				tecla = 6;
+          ultimaTecla = 6;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "6";
   			}
   			else if (numero == 'btn1') {
-  				 tecla = 1;
+  				tecla = 1;
+          ultimaTecla = 1;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "1";
   			}
   			else if (numero == 'btn2') {
   				tecla = 2;
+          ultimaTecla = 2;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "2";
   			}
   			else if (numero == 'btn3') {
   				tecla = 3;
+          ultimaTecla = 3;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "3";
   			}
   	    else if (numero == 'btn0') {
   				tecla = 0;
+          ultimaTecla = 0;
   				document.getElementById("txtResultado").value += tecla;
           total1 += "0";
   			}
         else if (numero == '.') {
           tecla = ".";
+          ultimaTecla = ".";
           document.getElementById("txtResultado").value += tecla;
           total1 += ".";
         }
@@ -173,7 +185,7 @@
           document.getElementById("txtResultado").value = '';
         break;
         case 'backspace':
-          total1 = ultimaTecla;
+          total1 = total1.replace(ultimaTecla,"");
           valores[pos] = parseFloat(total1);
           operando1Final = valores[0];
           operando2Final = valores[1];
