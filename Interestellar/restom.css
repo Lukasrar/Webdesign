@@ -112,11 +112,11 @@ body {margin:0;}
 	.col-10{width: 83.33%;}
 	.col-11{width: 91.66%;}
 	.col-12{width: 100%;}
-		*{
+	*{
 		font-size: 20px;
 	}
 	.logo{
-		width: 500px;
+		width: 600px;
 	}
 	input{
 		width: 450px;
@@ -126,6 +126,12 @@ body {margin:0;}
 		width: 450px;
 		height: 40px;
 	}
+	.fullscreen video{
+    	min-width: 100%;
+    	min-height: 100%;
+    	display: none;
+	}
+
 }
 
 @media screen and (min-width:840px) and (max-width: 1280px){
@@ -145,16 +151,22 @@ body {margin:0;}
 		font-size: 20px;
 	}
 	.logo{
-		width: 500px;
+		width: 600px;
 	}
 	input{
-		width: 450px;
-		height: 40px;
+		width: 550px;
+		height: 45px;
 	}
 	.btn{
-		width: 450px;
+		width: 550px;
 		height: 40px;
 	}
+	.fullscreen video{
+    	min-width: 100%;
+    	min-height: 100%;
+    	display: none;
+	}
+
 }
 
 .linha:after {
