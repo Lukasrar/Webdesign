@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+	function carregarDados(){
+		var nome = localStorage.getItem("nome");
+		var idade = localStorage.getItem("idade");
+		var estadoCivil = localStorage.getItem("estadoCivil");
+		var sexo = localStorage.getItem("sexo");
+		var conheceuSite = localStorage.getItem("conheceuSite");
+		var sugestoes = localStorage.getItem("sugestoes");
+		document.getElementById('nomeLocal').innerHTML = nome;
+		document.getElementById('idadeLocal').innerHTML = idade;
+		document.getElementById('estadoLocal').innerHTML = estadoCivil;
+		document.getElementById('sexoLocal').innerHTML = sexo;
+		document.getElementById('conheceuLocal').innerHTML = conheceuSite;
+		document.getElementById('sugestLocal').innerHTML = sugestoes;
+	}
+
+
+	</script>
+</head>
+<body onload="carregarDados()">
+	<p>Nome: <span id="nomeLocal"></span></p>
+	<p>Idade: <span id="idadeLocal"></span></p>
+	<p>Estado Civil: <span id="estadoLocal"></span></p>
+	<p>Sexo: <span id="sexoLocal"></span></p>
+	<p>Como conheceu o site: <span id="conheceuLocal"></span></p>
+	<p>Susgestão: <span id="sugestLocal"></span></p>
+</body>
+</html>
