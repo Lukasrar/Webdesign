@@ -34,7 +34,20 @@ html, body{
     border: none;
     border-radius: 3px;
     color: white;
+    transition: all 0.3s;
 }
+.colorBtn1{
+    background-color: #fc5c65;
+}
+.colorBtn2{
+    background-color: #45aaf2;
+}
+.colorBtn3{
+    background-color: #20bf6b;
+}
+.btn:hover{
+    transform: scale(0.95);
+}  
 input{
   	outline: none;
     margin: 10px;
@@ -42,6 +55,8 @@ input{
     height: 28px;
     border-radius: 5px;
     border: none;
+    padding: 15px;
+    color: gray;
 }
 .v-header{
     height: 100vh;
@@ -113,18 +128,20 @@ body {margin:0;}
 	.col-11{width: 91.66%;}
 	.col-12{width: 100%;}
 	*{
-		font-size: 20px;
+		font-size: 25px;
 	}
 	.logo{
-		width: 600px;
+		width: 100%;
 	}
 	input{
-		width: 450px;
-		height: 40px;
+		width: 100%;
+		height: 70px;
+        padding: 15px;
+        color: gray;
 	}
 	.btn{
-		width: 450px;
-		height: 40px;
+		width: 100%;
+		height: 70px;
 	}
 	.fullscreen video{
     	min-width: 100%;
@@ -151,11 +168,13 @@ body {margin:0;}
 		font-size: 20px;
 	}
 	.logo{
-		width: 600px;
+		width: 100%;
 	}
 	input{
 		width: 550px;
 		height: 45px;
+        padding: 15px;
+        color: gray;
 	}
 	.btn{
 		width: 550px;
