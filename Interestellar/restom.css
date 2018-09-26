@@ -130,19 +130,7 @@ body {margin:0;}
 	*{
 		font-size: 25px;
 	}
-	.logo{
-		width: 100%;
-	}
-	input{
-		width: 100%;
-		height: 70px;
-        padding: 15px;
-        color: gray;
-	}
-	.btn{
-		width: 100%;
-		height: 70px;
-	}
+
 	.fullscreen video{
     	min-width: 100%;
     	min-height: 100%;
