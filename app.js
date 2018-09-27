@@ -45,10 +45,11 @@
 
     firebase.auth().onAuthStateChanged(firebaseUser => {
         if(firebaseUser) {
+            console.log("Usuario logado: "+email.value);
             console.log(firebaseUser);
             btnLogout.classList.remove('hide');
         } else {
-            console.log("not logged in");
+            console.log("Usuario "+email.value+" fez logout");
             btnLogout.classList.add('hide');
         }
     })
