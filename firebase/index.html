@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style type="text/css">
+        .container{
+            max-width: 960px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+    <header class="v-header container">
+        <div class="col-dg-6 col-dm-12 col-12 centralDiv">
+            <h3 style="font-size: 40px; color: white; font-weight: bold;">Login</h3>
+            <input type="text" placeholder="email" id="email">
+            <input type="password" placeholder="password" id="password">
+            <p id="user" class="user hide">Usuário logado:</p>
+            <div style="width: 100%">
+                <button class="btn colorBtn3" id="btnLogin" type="submit" >Login</button>
+                <button class="btn colorBtn2" id="btnRegister" >Register</button>
+                <button class="btn hide colorBtn1" id="btnLogout" >Logout</button>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </header>
+</body>
+</html>
