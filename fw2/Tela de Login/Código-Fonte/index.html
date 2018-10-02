@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+    <link rel="stylesheet" href="css/restom.css" type="text/css">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <script src="js/funcoes.js"></script>
+</head>
+<body>
+    <audio id="audioUsuario">
+        <source src="sons/usuario.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="audioSenha"><source src="sons/senha.mp3" type="audio/mpeg"></audio>
+  
+    <div class="formulario">
+        <p class="titulo"></p>
+        <form id="formLogin">
+            <label for="txtNome">Usuário</label>
+            <input id="txtUsuario" name="usuario" type="text" maxlength="40" id="txtNome" onfocus="playAudio('audioUsuario')" onblur="pauseAudio('audioUsuario')">
+            
+            <label for="txtSenha">Senha</label>
+            <input id="txtSenha" name="senha" type="password" maxlength="8" id="txtSenha" onfocus="playAudio('audioSenha')" onblur="pauseAudio('audioSenha')">
+           
+            <input type="button" value="Entrar" onclick="validarFormulario('')">
+        </form>
+    </div>
+</body>
+</html>
