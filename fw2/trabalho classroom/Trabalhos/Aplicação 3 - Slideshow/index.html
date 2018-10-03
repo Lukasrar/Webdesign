@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow de figuras utilizando setTimeou</title>
+    <script>
+        // Controla o cronometro do slideshow
+        var g_cronometro;
+        // Vetor para armazenar o nome e a legenda de cada figura
+        var g_figuras = [
+            {"source":"figura1.png","legenda":"Vermelha"},
+            {"source":"figura2.png","legenda":"Verde"},
+            {"source":"figura3.png","legenda":"Azul"},
+            ];
+        // Inicialmente exibe a primeira figura (indice = 1).
+        var g_indiceFigura = 0;
+        
+        // Ativa slideshow
+        function iniciar() {
+            if (g_indiceFigura == 3) g_indiceFigura = 0;
+            
+            // Atualiza as informacoes do slideshow (imagem + legenda)
+            document.getElementById("imagem").src = "imagens/"+g_figuras[g_indiceFigura].source;
+            document.getElementById("legendaFigura").innerHTML = g_figuras[g_indiceFigura].legenda;
+            
+            g_indiceFigura++;
+            g_cronometro = setTimeout(iniciar,1500);
+        }
+        
+        // Desativa slideshow
+        function pausar() {
+            clearTimeout(g_cronometro);
+        }
+        
+    </script>
+</head>
+<body onload="iniciar()">
+     <img src="imagens/figura1.png" id="imagem"  onmouseover="pausar()" onmouseout="iniciar()"><br> 
+     <p>Figura:<span id="legendaFigura"></span></p>
+</body>
+</html>

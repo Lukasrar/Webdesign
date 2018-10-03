@@ -1,0 +1,21 @@
+Caro aluno,
+
+Leia ATENTAMENTE o texto abaixo:
+
+	* Prova bimestral: 08/10/18, das 19h às 22h30. Avaliação individual e consulta apenas a materiais offline. Valor: 25,0 pontos
+	* Aplicação 1 - Tamagochi: Valor: 2,0 pontos (enunciado anexo ao email)
+	* Aplicação 2 - Enquete Eleitoral: 3,0 pontos (enunciado anexo ao email)  
+	* Aplicação 3 - Slideshow: sem valor, porém DEVERÁ ser estudada para a prova (solução anexada ao email)
+	* Jogo da memória: preencha esse formulário (tinyurl.com/lista04finalizacao) sobre a conclusão do jogo da memória. Valor: 2,0 pontos. Responder até o dia 04/10/18.
+	
+A aplicações 1 e 2 (Tamagochi e Enquete Eleitoral) DEVEM ser enviadas para o meu email (wiltonpaulafilho@gmail.com) até às 18h44 do dia 08/10/18, com as seguintes características:
+
+	* Título do email: FW2
+	* Texto do corpo do email: Seu nome completo, além do texto "Aplicação 1: Tamagochi e Aplicação 2: Enquete eleitoral". Ex: Wilton de Paula Filho (Aplicação 1: Tamagochi e Aplicação 2: Enquete eleitoral)
+	* Formato do anexo: um ÚNICO arquivo anexando as duas aplicações (1 e 2), cujo nome do arquivo DEVE ser APENAS o seu nome completo. Ex: WiltonPaulaFilho.rar. Ao descompactar o arquivo DEVERÁ haver APENAS duas pastas: Aplicação_1_Tamagochi e Aplicação_2_Enquete_Eleitoral. Dentro de cada pasta DEVERÁ haver o arquivo index.html.
+	* OBS: Se essas recomendações não forem respeitadas, o seu trabalho não será avaliado (nota zero)
+
+Enfim, as informações acima (avaliações) totalizam 32,0 pontos. Portanto, se esforce para obter êxito em cada uma delas. Bom trabalho!
+
+Att,
+Prof. Wilton Filho

@@ -1,0 +1,60 @@
+*{
+    transition: all 0.6s;
+}
+body{
+    background-color: #ffeaa7;
+    background-size: cover;
+}
+.login{
+    background-color: lightblue;
+    background-size: cover;
+}
+.titulo{
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+.divForm{
+    width: 400px;
+    height: 100vh;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(65,191,218,0) 0%, rgba(4,75,173,0.41220238095238093) 50%, rgba(0,212,255,0) 100%);
+}
+.btn1{
+    background-color: #ff7675;
+    color: gray();
+    height: 30px;
+    border: none;
+    text-align: center;
+    width: 252px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+img{
+    width: 250px;
+
+}
+.inputNome{
+    width: 250px;
+    height: 20px;
+}
+.centralDiv{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    height: 100vh;
+}
+.nome{
+    text-align: center;
+    font-size:25px;
+    margin: 20px;
+    color: gray();
+    font-family: sans-serif;
+}
