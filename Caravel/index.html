@@ -18,11 +18,21 @@
 <header>
     <nav>
         <ul>
-            <li><a href="faleConosco.html">Fale Conosco</a></li>
-            <li><a href="quemSomos.html">Quem Somos</a></li>
-            <li><a href="index.html">Treinos/aulas</a></li>
+            <li><a href="#faleConosco">Fale Conosco</a></li>
+            <li><a href="#sobre">Quem Somos</a></li>
+            <li><a href="#treinos">Treinos/aulas</a></li>
         </ul>
     </nav>
+    <div class="sideBar" onclick="openSlideMenu()">
+        <input type="checkbox" id="bt_menu" class="btnNav">
+        <label for="bt_menu">&#9776;</label>
+    </div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Fale Conosco</a>
+        <a href="#">Quem Somos</a>
+        <a href="#">Treinos/aulas</a>
+    </div>
 </header>
 
 <div class="pimg1">
@@ -33,7 +43,7 @@
             </span>
     </div>
 </div>
-
+<a name="treinos"></a>
 <section>
     <div class="col-dg-8 col-dm-12 col-12 sectionSports">
         <img src="./imagens/imgSection1.jpg" class="imgArticle1">
@@ -104,12 +114,13 @@
     </div>
 </section>
 <div class="linha"></div>
+<a name="faleConosco"></a>
 <section class="sectionForm">
     <div class="col-dg-8 col-dm-12 col-12 sectionSports" style="margin-bottom: 0">
         <h3 class="titulos">Fale Conosco</h3>
         <form class="formulario">
-            <input type="text" placeholder="Informe seu nome">
-            <input type="email" placeholder="Informe seu email">
+            <input type="text" placeholder="Informe seu nome"  class="inputForm">
+            <input type="email" placeholder="Informe seu email" class="inputForm">
             <textarea placeholder="Informe seu comentário"></textarea>
             <button class="btnForm">Enviar</button>
         </form>
@@ -117,7 +128,7 @@
 </section>
 
 <div class="linha"></div>
-
+<a name="sobre"></a>
 <footer class="footer" style="margin-top: 0">
     <div class="col-dg-8 col-dm-12 col-12 sectionSports" style="margin-bottom: 0">
         <h3 class="tituloFooter">Sobre</h3>
@@ -143,5 +154,16 @@
         </div>
     </div>
 </footer>
+<script>
+    function openSlideMenu(){
+        document.getElementById('side-menu').style.width = '250px';
+        document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+        document.getElementById('side-menu').style.width = '0';
+        document.getElementById('main').style.marginLeft = '0';
+    }
+</script>
 </body>
 </html>
