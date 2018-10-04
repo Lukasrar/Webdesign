@@ -285,7 +285,7 @@ nav ul li a:hover {
         margin-top: 100px;
     }
     nav{
-        top: -100%;
+        display: none;
     }
     .sideBar {
         visibility: visible;
