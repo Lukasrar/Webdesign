@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>Caravel Fitness Park</title>
-
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
     <link rel="stylesheet" href="./css/index.css">
     <style type="text/css">
         .container{
@@ -19,9 +26,9 @@
 <header>
     <nav>
         <ul>
-            <li><a href="#faleConosco">Fale Conosco</a></li>
-            <li><a href="#sobre">Quem Somos</a></li>
-            <li><a href="#treinos">Treinos/aulas</a></li>
+            <li><a href="#faleConosco">FALE CONOSCO</a></li>
+            <li><a href="#sobre">QUEM SOMOS</a></li>
+            <li><a href="#treinos">TREINOS/AULAS</a></li>
         </ul>
     </nav>
     <div class="sideBar" onclick="openSlideMenu()">
@@ -30,9 +37,9 @@
     </div>
     <div id="side-menu" class="side-nav">
         <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#faleConosco">Fale Conosco</a>
-        <a href="#sobre">Quem Somos</a>
-        <a href="#treinos">Treinos/aulas</a>
+        <a href="#faleConosco">FALE CONOSCO</a>
+        <a href="#sobre">QUEM SOMOS</a>
+        <a href="#treinos">TREINOS/AULAS</a>
     </div>
 </header>
 
@@ -40,7 +47,7 @@
     <div class="logoDiv">
             <span class="border">
                 <img src="Logo Caravel Fitness Park-01.png" class="logo"><br>
-                <button class="btn">Veja Sobre</button>
+                <img src="imagens/seta.png" class="animated infinite bounce seta">
             </span>
     </div>
 </div>
@@ -157,13 +164,11 @@
 </footer>
 <script>
     function openSlideMenu(){
-        document.getElementById('side-menu').style.width = '250px';
-        document.getElementById('main').style.marginLeft = '250px';
+        document.getElementById('side-menu').style.width = '350px';
     }
 
     function closeSlideMenu(){
         document.getElementById('side-menu').style.width = '0';
-        document.getElementById('main').style.marginLeft = '0';
     }
 </script>
 </body>

@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2e2c2e-10b7-4d5d-908a-ae68f89eaa0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caravel/Design Grafico/Fonts.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Caravel/Design Grafico/Fonts.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Caravel/Design Grafico/Logo Caravel Fitness Park.eps" beforeDir="false" afterPath="$PROJECT_DIR$/Caravel/Design Grafico/Logo Caravel Fitness Park.eps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Caravel/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/Caravel/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Caravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Caravel/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Insterestellar/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Insterestellar/.idea/workspace.xml" afterDir="false" />
@@ -20,14 +22,15 @@
     <session id="-581863417">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
           <entry key="project.open.time.23" value="2" />
+          <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -46,15 +49,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2243" />
-          <entry key="html" value="3266" />
+          <entry key="css" value="2423" />
+          <entry key="html" value="3482" />
           <entry key="js" value="1628" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2243" />
-          <entry key="HTML" value="3266" />
+          <entry key="CSS" value="2423" />
+          <entry key="HTML" value="3482" />
           <entry key="JavaScript" value="1628" />
         </counts>
       </usages-collector>
@@ -62,13 +65,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Caravel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="119" column="82" lean-forward="true" selection-start-line="119" selection-start-column="82" selection-end-line="119" selection-end-column="82" />
+            <state relative-caret-position="271">
+              <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
               <folding>
-                <element signature="e#889#896#1" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -77,11 +79,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Caravel/css/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
+            <state relative-caret-position="437">
+              <caret line="217" column="17" lean-forward="true" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+              <folding>
+                <marker date="1538710623706" expanded="true" signature="4341:4366" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,6 +105,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>text-jus</find>
+      <find>btn</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,8 +125,8 @@
         <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/jogo.html" />
         <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/funcoes.js" />
         <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/estilos.css" />
-        <option value="$PROJECT_DIR$/Caravel/css/index.css" />
         <option value="$PROJECT_DIR$/Caravel/index.html" />
+        <option value="$PROJECT_DIR$/Caravel/css/index.css" />
       </list>
     </option>
   </component>
@@ -206,12 +212,13 @@
       <workItem from="1538492173619" duration="868000" />
       <workItem from="1538497809690" duration="65000" />
       <workItem from="1538579960854" duration="9800000" />
-      <workItem from="1538668494777" duration="15730000" />
+      <workItem from="1538668494777" duration="16084000" />
+      <workItem from="1538707489457" duration="3135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34345000" />
+    <option name="totallyTimeSpent" value="37834000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -316,22 +323,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Caravel/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="103" column="29" lean-forward="true" selection-start-line="103" selection-start-column="29" selection-end-line="103" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Caravel/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="119" column="82" lean-forward="true" selection-start-line="119" selection-start-column="82" selection-end-line="119" selection-end-column="82" />
+        <state relative-caret-position="271">
+          <caret line="163" column="9" lean-forward="true" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
           <folding>
-            <element signature="e#889#896#1" expanded="true" />
             <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caravel/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="217" column="17" lean-forward="true" selection-start-line="217" selection-start-column="17" selection-end-line="217" selection-end-column="17" />
+          <folding>
+            <marker date="1538710623706" expanded="true" signature="4341:4366" ph="..." />
           </folding>
         </state>
       </provider>

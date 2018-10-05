@@ -1,8 +1,6 @@
-
-
 Fonts used in this design;
 
-Font: Montserrat
-Author: Julieta Ulanovsky
-https://www.fontsquirrel.com/fonts/montserrat
+Font: Caviar Dreams, 
+Author: Nymphont, 
+Url: http://www.fontsquirrel.com/fonts/caviar-dreams; 
 
