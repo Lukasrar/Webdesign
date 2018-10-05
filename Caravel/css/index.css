@@ -133,9 +133,10 @@ body, html{
     margin-top: 20px;
     justify-content: center;
     width: 600px;
+
     flex-direction: column;
 }
-inputForm {
+input[type="text"] {
     margin-bottom: 20px;
     width: 100%;
     height: 50px;
@@ -143,7 +144,7 @@ inputForm {
     border-radius: 3px;
     border: none;
 }
-inputForm::placeholder {
+input[type="text"]::placeholder {
     color: #FDA50F;
 }
 textarea::placeholder {
@@ -311,6 +312,34 @@ nav ul li a:hover {
         width: 400px;
         height: 60px;
         font-size: 40px;
+    }
+    .btnForm{
+        font-size: 40px;
+        height: 80px;
+    }
+    .formulario {
+        width: 100%;
+    }
+    input[type="text"] {
+        margin-bottom: 20px;
+        width: 100%;
+        height: 80px;
+        padding: 20px;
+        border-radius: 3px;
+        border: none;
+        font-size: 40px;
+    }
+    textarea {
+        font-size: 40px;
+        width: 100%;
+        height: 130px;
+        padding: 20px;
+        border-radius: 3px;
+        border: none;
+    }
+    .icones {
+        width: 100px;
+        margin: 10px;
     }
     .pimg1{
         background-image: url("../imagens/img1.jpg");
