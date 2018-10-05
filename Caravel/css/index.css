@@ -68,6 +68,8 @@ body, html{
     border-radius: 50%;
     float: left;
     margin-right: 30px;
+    box-shadow: -8px 7px 0px 1px rgba(255,140,0,0.89);
+
 }
 .imgArticle2 {
     width: 300px;
@@ -75,6 +77,7 @@ body, html{
     border-radius: 50%;
     float: right;
     margin-left: 30px;
+    box-shadow: 8px 7px 0px 1px rgba(255,140,0,0.89);
 }
 .border{
     position: absolute;
@@ -96,14 +99,19 @@ body, html{
 }
 .divIcones {
     display: flex;
-    width: 100%;
+    width: 300px;
     margin: auto;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+    flex-direction: row;
 }
 .icones {
     width: 60px;
     margin: 10px;
+}
+.pIcones {
+    text-align: center;
+    color: black;
 }
 .textJustify {
     text-align: justify;
@@ -157,7 +165,15 @@ textarea {
     border-radius: 3px;
     border: none;
 }
-
+.formSucess {
+    position: relative;
+    left: -200%;
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
 .sectionSports {
     width: 100%;
     margin-left: auto;
@@ -200,7 +216,6 @@ nav ul li a{
     height: 60px;
 }
 .side-nav .btn-close{
-
     position:absolute;
     top:0;
     right:22px;
@@ -247,7 +262,7 @@ label[for=bt_menu]{
     padding:10px 10px 10px 30px;
     text-decoration:none;
     font-size:40px;
-    color:#ccc;
+    color: rgba(255,195,11,1);
     display:block;
     transition:0.3s;
 }
@@ -260,6 +275,7 @@ nav ul li a:hover {
     background-color: #111111;
     color: white;
 }
+
 }
 [class^="col-"] {
     width:100%;

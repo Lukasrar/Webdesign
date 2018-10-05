@@ -1,5 +1,6 @@
 var nome;
 var contador;
+var funciona = true;
 function validar() {
      nome = document.getElementById("nomeJogador").value.trim();
     if (nome == ""){
@@ -13,29 +14,42 @@ function validar() {
 var nomejogador = localStorage.getItem('nome');
 document.getElementById('name').innerHTML += nomejogador;
 
+var imagem = $("imagem");
+var interacao = $("interacao");
+
+imagem.addEventListener("mouseover", assustado);
+imagem.addEventListener("mouseout", pensativo);
+imagem.addEventListener("click", alegre);
+
 function assustado(){
-    document.getElementById("imagem").src='imagens/Assustado.png'
-    document.getElementById('bg').style.backgroundColor = "#ff7675";
-    clearTimeout(contador);
+    imagem.src='imagens/Assustado.png'
+    $('bg').style.backgroundColor = "#ff7675";
 }
 function pensativo(){
-    document.getElementById("imagem").src='imagens/Pensativo.png'
-    document.getElementById('bg').style.backgroundColor = "#ffeaa7";
-    document.getElementById('interacao').innerHTML = "Não demore viu!";
-    clearTimeout(contador);
-}
-function pensativo2() {
-    contador = setTimeout(nervoso,3000);
+    imagem.src='imagens/Pensativo.png'
+    $('bg').style.backgroundColor = "#ffeaa7";
 }
 function alegre(){
-    document.getElementById("imagem").src='imagens/Alegre.png'
-    document.getElementById('bg').style.backgroundColor = "#74b9ff";
-    document.getElementById('interacao').innerHTML = "Gosto quando você interage comigo!";
+    imagem.removeEventListener("mouseover", assustado);
+    imagem.removeEventListener("mouseout", pensativo);
+    imagem.addEventListener("mouseout", alegreOut);
+    imagem.addEventListener("mouseover", alegre);
+    imagem.src='imagens/Alegre.png';
+    $('bg').style.backgroundColor = "#74b9ff";
+    interacao.innerHTML = "Gosto quando você interage comigo!";
     clearTimeout(contador);
-    pensativo2();
 }
 function nervoso(){
-    document.getElementById("imagem").src='imagens/Nervoso.png'
-    document.getElementById('bg').style.backgroundColor = "#d63031";
-    document.getElementById('interacao').innerHTML = nomejogador+" ,cadê vocêêêêêêê?";
+    imagem.src='imagens/Nervoso.png'
+    $('bg').style.backgroundColor = "#d63031";
+    interacao.innerHTML = nomejogador+" ,cadê vocêêêêêêê?";
+}
+ function alegreOut(){
+    interacao.innerHTML = "Não demore viu!";
+    contador = setTimeout(nervoso, 3000);
+}
+
+
+function $(campo){
+    return document.getElementById(campo);
 }

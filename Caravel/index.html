@@ -22,13 +22,13 @@
         }
     </style>
 </head>
-<body>
+<body onload="start()">
 <header>
     <nav>
-        <ul>
-            <li><a href="#faleConosco">FALE CONOSCO</a></li>
-            <li><a href="#sobre">QUEM SOMOS</a></li>
-            <li><a href="#treinos">TREINOS/AULAS</a></li>
+        <ul class="animated slideInDown">
+            <li><a href="#faleConosco" id="btn1" onmouseover="animateUl('btn1')" class="animated ">FALE CONOSCO</a></li>
+            <li><a href="#sobre" id="btn2" onmouseover="animateUl('btn2')" class="animated ">QUEM SOMOS</a></li>
+            <li><a href="#treinos" id="btn3" onmouseover="animateUl('btn3')" class="animated ">TREINOS/AULAS</a></li>
         </ul>
     </nav>
     <div class="sideBar" onclick="openSlideMenu()">
@@ -46,7 +46,7 @@
 <div class="pimg1">
     <div class="logoDiv">
             <span class="border">
-                <img src="Logo Caravel Fitness Park-01.png" class="logo"><br>
+                <img src="Logo Caravel Fitness Park-01.png" class="animated zoomInDown logo"><br>
                 <img src="imagens/seta.png" class="animated infinite bounce seta">
             </span>
     </div>
@@ -54,83 +54,68 @@
 <a name="treinos"></a>
 <section>
     <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection1.jpg" class="imgArticle1">
+        <img src="./imagens/imgSection1.jpg" class="animated imgArticle1" id="img1" onmouseover="animateTest('img1')" onclick="animateTest('img1')">
         <h2 class="titulos">Power Lifting</h2>
-        <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="textJustify">O powerlifting é um desporto de força, cujo objetivo do atleta é levantar
+            o maior peso possível em cada um dos movimentos pelos quais este desporto é composto;
+            o movimento de agachamento, supino e o peso morto. O powerlifting foi oficialmente reconhecido
+            como um desporto em 1960, e em 1973 foi fundada a sua primeira federação internacional a IPF – International Powerlifting Federation.
         </p>
+
     </div>
 
     <div class="linha"></div>
 
     <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection2.jpeg" class="imgArticle2">
+        <img src="./imagens/imgSection2.jpeg" class="animated imgArticle2" id="img2" onmouseover="animateTest('img2')" onclick="animateTest('img2')">
         <h2 class="titulos">Musculação</h2>
-        <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="textJustify">A Musculação é um meio de treinamento ou uma modalidade na qual se integram as
+            principais áreas de conhecimento sobre o comportamento fisiológico e motor do corpo humano, objetivando
+            entender e explicar as adaptações crônicas e agudas, decorrentes da aplicação de diversas estratégias e
+            técnicas de treinamento. O treinamento de força é uma das ferramentas utilizadas na modalidade Musculação,
+            que aborda também o treinamento aeróbico, o treinamento de flexibilidade e possibilidades de intervenções
+            profiláticas em alguns dos principais desvios posturais.
         </p>
     </div>
 
     <div class="linha"></div>
 
     <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection3.jpg" class="imgArticle1">
-        <h2 class="titulos">Cross Fit</h2>
-        <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <img src="./imagens/imgSection3.jpg" class="animated imgArticle1" id="img3" onmouseover="animateTest('img3')" onclick="animateTest('img3')">
+        <h2 class="titulos">Crossfit</h2>
+        <p class="textJustify">Crossfit é uma marca registrada internacionalmente pela CrossFit Inc., empresa
+            norte-americana responsável por criar o método de treinamento que virou febre em todo o mundo por
+            abordar diversas capacidades do corpo humano. Criado por Greg Glassman, o crossfit é um treinamento
+            que une levantamento de peso olímpico, ginástica, atletismo e outras modalidades em atividades de alta intensidade.
         </p>
     </div>
 
     <div class="linha"></div>
 
     <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection4.jpg" class="imgArticle2">
+        <img src="./imagens/imgSection4.jpg" class="animated imgArticle2" id="img4" onmouseover="animateTest('img4')" onclick="animateTest('img4')">
         <h2 class="titulos">Spinning</h2>
-        <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <p class="textJustify">Spinning é um programa de treino cardiovascular que se adequa ao condicionamento físico de cada
+            praticante e é feito sobre uma bicicleta de spinning, criada para oferecer treinamento intenso. A aula de spinning
+            abrange 2 componentes principais: o mental e o físico. A forma mental de quem faz spinning é um fator importante,
+            pois é ela que vai fazer com que o praticante consiga chegar até o fim dos 40 minutos (geralmente o tempo que dura a
+            aula) de pedaladas intensas sem desistir. Já a parte física tende a melhorar a cada aula.
         </p>
     </div>
 
     <div class="linha"></div>
-
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection5.jpeg" class="imgArticle1">
-        <h2 class="titulos">Lutas</h2>
-        <p class="textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
 </section>
 <div class="linha"></div>
 <a name="faleConosco"></a>
 <section class="sectionForm">
     <div class="col-dg-8 col-dm-12 col-12 sectionSports" style="margin-bottom: 0">
         <h3 class="titulos">Fale Conosco</h3>
-        <form class="formulario">
-            <input type="text" placeholder="Informe seu nome">
-            <input type="text" placeholder="Informe seu email">
-            <textarea placeholder="Informe seu comentário"></textarea>
-            <button class="btnForm">Enviar</button>
+        <form class="formulario" id="formularioDeContato">
+            <input type="text" placeholder="Informe seu nome" id="nome" required>
+            <input type="text" placeholder="Informe seu email" id="email" required>
+            <textarea placeholder="Informe seu comentário" id="mensagem" required></textarea>
+            <button class="btnForm" type="submit">Enviar</button>
+            <div class="animated formSucess" id="sucesso">Seu comentário foi enviado com sucesso!</div>
         </form>
     </div>
 </section>
@@ -148,28 +133,22 @@
             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
         <h3 class="tituloFooter">Contatos</h3>
-        <div class="divIcones">
-            <img src="imagens/icone-01.png" class="icones">
+        <div class="divIcones" onmouseover="abrirFooter1()" onmouseout="fecharFooter1()" onclick="abrirFooter1()">
+            <img src="imagens/icone-01.png" class="icones" >
+            <p id="icone1" class="pIcones">XXX. XXXXXXXXXXX</p>
         </div>
-        <div class="divIcones">
+        <div class="divIcones" onmouseover="abrirFooter2()" onmouseout="fecharFooter2()" onclick="abrirFooter2()">
             <img src="imagens/icone-02.png" class="icones">
+            <p id="icone2" class="pIcones">34 99222-1743</p>
         </div>
-        <div class="divIcones">
+        <div class="divIcones" onmouseover="abrirFooter3()" onmouseout="fecharFooter3()" onclick="abrirFooter3()">
             <img src="imagens/icone-03.png" class="icones">
-        </div>
-        <div class="divIcones">
-            <img src="imagens/icone-04.png" class="icones">
+            <p id="icone3" class="pIcones">@lukaswp</p>
         </div>
     </div>
 </footer>
-<script>
-    function openSlideMenu(){
-        document.getElementById('side-menu').style.width = '350px';
-    }
-
-    function closeSlideMenu(){
-        document.getElementById('side-menu').style.width = '0';
-    }
-</script>
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script src="funcoes.js"></script>
+<script src="firebase.js"></script>
 </body>
 </html>
