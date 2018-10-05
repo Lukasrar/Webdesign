@@ -16,175 +16,6 @@ body, html{
     line-height: 1.8em;
     color: #666;
 }
-.header-overlay{
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: black;
-    z-index: 1;
-    opacity: 0.7;
-}
-.seta {
-    margin-top: 80px;
-    width: 100px;
-}
-.btn {
-    z-index: 3;
-    width: 300px;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 60px;
-    border: none;
-    color: #282828;
-    font-size: 20px;
-    background-color: #FDA50F;
-}
-.btnForm{
-    width: 100%;
-    height: 50px;
-    border-radius: 10px;
-    margin-top: 30px;
-    border: none;
-    color: #282828;
-    font-size: 20px;
-    background-color: #FDA50F;
-}
-.pimg1{
-    background-image: url("../imagens/img1.jpg");
-    min-height: 100%;
-    height: 100%;
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    z-index: -1;
-}
-.imgArticle1 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    float: left;
-    margin-right: 30px;
-    box-shadow: -8px 7px 0px 1px rgba(255,140,0,0.89);
-
-}
-.imgArticle2 {
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    float: right;
-    margin-left: 30px;
-    box-shadow: 8px 7px 0px 1px rgba(255,140,0,0.89);
-}
-.border{
-    position: absolute;
-    top: 30%;
-    width: 100%;
-    text-align: center;
-}
-.logo {
-    width: 600px;
-    margin: auto;
-    z-index: 3;
-}
-.sectionForm {
-    margin-top: 30px;
-    background-color: #141414;
-}
-.footer {
-    background-color: #FDA50F;
-}
-.divIcones {
-    display: flex;
-    width: 300px;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.icones {
-    width: 60px;
-    margin: 10px;
-}
-.pIcones {
-    text-align: center;
-    color: black;
-}
-.textJustify {
-    text-align: justify;
-    text-justify: inter-word;
-}
-.pFooter{
-    color: black;
-    text-align: justify;
-    text-justify: inter-word;
-    margin-bottom: 30px;
-}
-.tituloFooter{
-    font-size: 35px;
-    margin-bottom: 50px;
-    font-weight: bold;
-    color: black;
-}
-.titulos {
-    font-size: 35px;
-    margin-bottom: 50px;
-    font-weight: bold;
-    color: #FDA50F;
-}
-.formulario {
-    display: flex;
-    margin: auto;
-    margin-top: 20px;
-    justify-content: center;
-    width: 600px;
-
-    flex-direction: column;
-}
-input[type="text"] {
-    margin-bottom: 20px;
-    width: 100%;
-    height: 50px;
-    padding: 20px;
-    border-radius: 3px;
-    border: none;
-}
-input[type="text"]::placeholder {
-    color: #FDA50F;
-}
-textarea::placeholder {
-    color: #FDA50F;
-}
-textarea {
-    width: 100%;
-    height: 130px;
-    padding: 20px;
-    border-radius: 3px;
-    border: none;
-}
-.formSucess {
-    position: relative;
-    left: -200%;
-    width: 100%;
-    background-color: green;
-    color: white;
-    margin-top: 20px;
-    border-radius: 5px;
-}
-.sectionSports {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    text-align: center;
-    padding: 50px 80px;
-}
-header {
-    margin: 0px 0px 0px 0px;
-}
 nav {
     display: flex;
     align-items: center;
@@ -257,7 +88,7 @@ label[for=bt_menu]{
     transition:0.5s;
 }
 .side-nav a{
-    //border: 1px solid red;
+//border: 1px solid red;
     margin: 10px;
     padding:10px 10px 10px 30px;
     text-decoration:none;
@@ -266,16 +97,158 @@ label[for=bt_menu]{
     display:block;
     transition:0.3s;
 }
-
 .side-nav a:hover{
     color:#fff;
 }
-
 nav ul li a:hover {
     background-color: #111111;
     color: white;
 }
-
+.logo {
+    width: 600px;
+    margin: auto;
+    z-index: 3;
+}
+.seta {
+    margin-top: 80px;
+    width: 100px;
+}
+.pimg1{
+    background-image: url("../imagens/img1.jpg");
+    min-height: 100%;
+    height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: -1;
+}
+.sectionSports {
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+     margin-bottom: 100px;
+     text-align: center;
+     padding: 50px 80px;
+ }
+.imgArticle1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 30px;
+    box-shadow: -8px 7px 0px 1px rgba(255,140,0,0.89);
+}
+.imgArticle2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 30px;
+    box-shadow: 8px 7px 0px 1px rgba(255,140,0,0.89);
+}
+.border{
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+}
+.textJustify {
+    text-align: justify;
+    text-justify: inter-word;
+}.formulario {
+     display: flex;
+     margin: auto;
+     margin-top: 20px;
+     justify-content: center;
+     width: 600px;
+     flex-direction: column;
+ }
+input[type="text"] {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 50px;
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+}
+input[type="text"]::placeholder {
+    color: #FDA50F;
+}
+textarea::placeholder {
+    color: #FDA50F;
+}
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    border-radius: 3px;
+    border: none;
+}
+.formSucess {
+    position: relative;
+    left: -200%;
+    width: 100%;
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btnForm{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: none;
+    color: #282828;
+    font-size: 20px;
+    background-color: #FDA50F;
+}
+.sectionForm {
+    margin-top: 30px;
+    background-color: #141414;
+}
+.tituloFooter{
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: black;
+}
+.footer {
+    background-color: #FDA50F;
+}
+.divIcones {
+    display: flex;
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.icones {
+    width: 60px;
+    margin: 10px;
+}
+.pIcones {
+    text-align: center;
+    color: black;
+}
+.pFooter{
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom: 30px;
+}
+.titulos {
+    font-size: 35px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    color: #FDA50F;
+}
+header {
+    margin: 0px 0px 0px 0px;
+}
 }
 [class^="col-"] {
     width:100%;
@@ -333,6 +306,11 @@ nav ul li a:hover {
         font-size: 40px;
         height: 80px;
     }
+    .formSucess {
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+    }
     .formulario {
         width: 100%;
     }
@@ -374,7 +352,6 @@ nav ul li a:hover {
         width: 600px;
         height: 600px;
     }
-
     .col-dm-1{width: 8.33%;}
     .col-dm-2{width: 16.66%;}
     .col-dm-3{width: 25%;}
@@ -388,7 +365,6 @@ nav ul li a:hover {
     .col-dm-11{width: 91.66%;}
     .col-dm-12{width: 100%;}
 }
-
 .linha:after {
     content:"";
     display:block;
