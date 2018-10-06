@@ -301,12 +301,13 @@ header {
     background-color: #111111;
 }
 .tituloComentario{
+    font-size: 25px;
     color: #FDA50F;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .pAppend {
-    font-size: 20px;
+    font-size: 18px;
     color: gray;
     text-align: justify;
     text-justify: inter-word;
@@ -379,6 +380,12 @@ header {
     }
     .formulario {
         width: 100%;
+    }
+    .tituloComentario{
+        font-size: 30px;
+    }
+    .pAppend {
+        font-size: 25px;
     }
     input[type="text"], input[type="password"]{
         margin-bottom: 20px;
