@@ -312,6 +312,7 @@ header {
     color: #1b1e21;
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
     border-bottom: 2px solid black;
 }
