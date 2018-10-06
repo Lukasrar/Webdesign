@@ -160,13 +160,13 @@ nav ul li a:hover {
     z-index: -1;
 }
 .sectionSports {
-     width: 100%;
-     margin-left: auto;
-     margin-right: auto;
-     margin-bottom: 100px;
-     text-align: center;
-     padding: 50px 80px;
- }
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    text-align: center;
+    padding: 50px 80px;
+}
 .imgArticle1 {
     width: 300px;
     height: 300px;
@@ -286,6 +286,30 @@ textarea {
 }
 header {
     margin: 0px 0px 0px 0px;
+}
+.divComentarios{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 500px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #111111;
+}
+.tituloComentario{
+    color: #FDA50F;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.pAppend {
+    font-size: 20px;
+    color: gray;
+    text-align: justify;
+    text-justify: inter-word;
 }
 }
 [class^="col-"] {

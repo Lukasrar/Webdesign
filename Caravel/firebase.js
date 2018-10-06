@@ -9,32 +9,6 @@ var config = {
 };
 firebase.initializeApp(config);
 
-var mensagens = []
-
-var database = firebase.database()
-// Referencia das mensagens
-var mensagensRef = database.ref('mensagens')
-
-mensagensRef.on('value', snapshot => {
-    let data = Object.values(snapshot.val())
-
-    mensagens = data
-})
-
-setTimeout(function(){
-    for(m of mensagens){
-        console.log(m)
-       // appendNoSite(m)
-    }
-}, 1500)
-
-// function appendNoSite(m){
-//     var nota = document.createElement('p')
-//     var textnode = document.createTextNode('m.mensagem');
-//     nota.appendChild(textnode)
-// }
-
-
 // Pegando valor dos inputs
 function getInput(campo){
     return document.getElementById(campo).value;
