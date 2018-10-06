@@ -9,6 +9,9 @@ var config = {
 };
 firebase.initializeApp(config);
 
+// Referencia das mensagens
+var mensagensRef = database.ref('mensagens')
+
 // Pegando valor dos inputs
 function getInput(campo){
     return document.getElementById(campo).value;
@@ -44,7 +47,7 @@ function enviarFormulario(e) {
 
 //Salvar mensagens no firebase
 
-function salvar(nome, email, mensagensRef) {
+function salvar(nome, email, mensagem) {
     var novaMensagem = mensagensRef.push();
     novaMensagem.set({
         nome: nome,
