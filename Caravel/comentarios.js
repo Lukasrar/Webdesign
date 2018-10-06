@@ -1,3 +1,4 @@
+location.reload();
 // Iniciando o FireBase
 var config = {
     apiKey: "AIzaSyCY7bbHOn3LbWRPZuiyeqJeCjaKvpAgL3c",
