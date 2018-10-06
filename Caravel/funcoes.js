@@ -48,6 +48,13 @@ function animateUl(idCampo) {
     },500)
 }
 
+function abreDivLogin() {
+    $('loginAdm').style.top = '100px';
+}
+function fechaDivLogin() {
+    $('loginAdm').style.top = '-1000px';
+}
+
 //Função que retorna document.getElementById
 function $(campo){
     return document.getElementById(campo);

@@ -9,8 +9,31 @@ var config = {
 };
 firebase.initializeApp(config);
 
+var mensagens = []
+
+var database = firebase.database()
 // Referencia das mensagens
-var mensagens = firebase.database().ref('mensagens')
+var mensagensRef = database.ref('mensagens')
+
+mensagensRef.on('value', snapshot => {
+    let data = Object.values(snapshot.val())
+
+    mensagens = data
+})
+
+setTimeout(function(){
+    for(m of mensagens){
+        console.log(m)
+       // appendNoSite(m)
+    }
+}, 1500)
+
+// function appendNoSite(m){
+//     var nota = document.createElement('p')
+//     var textnode = document.createTextNode('m.mensagem');
+//     nota.appendChild(textnode)
+// }
+
 
 // Pegando valor dos inputs
 function getInput(campo){
@@ -48,10 +71,56 @@ function enviarFormulario(e) {
 //Salvar mensagens no firebase
 
 function salvar(nome, email, mensagem) {
-    var novaMensagem = mensagens.push();
+    var novaMensagem = mensagensRef.push();
     novaMensagem.set({
         nome: nome,
         email: email,
         mensagem: mensagem
     })
 }
+
+//Pegando elementos do login
+const txtEmail =document.getElementById('emailLogin');
+const txtPass =document.getElementById('senhaLogin');
+const btnLogin =document.getElementById('btnLogin');
+const btnLogout =document.getElementById('btnLogout');
+var navAdm =document.getElementById('comentarios');
+var sideNavAdm =document.getElementById('sideNavComentarios');
+
+//login
+btnLogin.addEventListener('click', e =>{
+    //Pegando valores do email e da senha
+    const email = txtEmail.value;
+    const pass = txtPass.value;
+    const auth = firebase.auth();
+
+    //logar
+    const promise = auth.signInWithEmailAndPassword(email, pass);
+    promise.catch(e => {
+        if(e.code == 'auth/user-not-found'){
+            console.log('nao tem esse usuario!')
+        }
+    });
+
+    //Listener de logout
+    btnLogout.addEventListener('click', e => {
+        firebase.auth().signOut();
+    });
+
+    //Verificando se há usuario logado
+    firebase.auth().onAuthStateChanged(firebaseUser => {
+        if(firebaseUser) {
+            console.log("Usuario logado: "+txtEmail.value);
+            console.log(firebaseUser);
+            navAdm.classList.remove('hide')
+            sideNavAdm.classList.remove('hide')
+            btnLogout.classList.remove('hide');
+        } else {
+            navAdm.classList.add('hide')
+            sideNavAdm.classList.remove('hide')
+            console.log("Usuario "+txtEmail.value+" fez logout");
+            btnLogout.classList.add('hide');
+
+        }
+    })
+})
