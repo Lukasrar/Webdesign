@@ -44,7 +44,7 @@ function enviarFormulario(e) {
 
 //Salvar mensagens no firebase
 
-function salvar(nome, email, mensagem) {
+function salvar(nome, email, mensagensRef) {
     var novaMensagem = mensagensRef.push();
     novaMensagem.set({
         nome: nome,

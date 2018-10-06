@@ -269,6 +269,7 @@ textarea {
     margin: 10px;
 }
 .pIcones {
+    font-size: 35px;
     text-align: center;
     color: black;
 }
@@ -402,7 +403,6 @@ header {
         font-size: 33px;
         margin: 10px;
     }
-
     input[type="text"], input[type="password"]{
         margin-bottom: 20px;
         width: 100%;
