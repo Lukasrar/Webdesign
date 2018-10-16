@@ -3,7 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="0f2e2c2e-10b7-4d5d-908a-ae68f89eaa0e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Caravel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Caravel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Enunciado - Aplicação Tamagochi.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Enunciado - Aplicação Tamagochi.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Imagens/Alegre.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Imagens/Assustado.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Imagens/Nervoso.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/Imagens/Pensativo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/estilos.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/funcoes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/jogo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Enunciado - Aplicação Enquete Eleitoral.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Enunciado - Aplicação Enquete Eleitoral.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/bolsonaro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/ciro.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/geraldo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/haddad.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,73 +34,60 @@
     <session id="-581863417">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="13" />
           <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.23" value="4" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.opened" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="14" />
-          <entry key="html" value="21" />
-          <entry key="js" value="14" />
+          <entry key="css" value="22" />
+          <entry key="html" value="23" />
+          <entry key="js" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="14" />
-          <entry key="HTML" value="21" />
-          <entry key="JavaScript" value="14" />
+          <entry key="CSS" value="22" />
+          <entry key="HTML" value="23" />
+          <entry key="JavaScript" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="3746" />
-          <entry key="html" value="5376" />
-          <entry key="js" value="5095" />
+          <entry key="css" value="3999" />
+          <entry key="html" value="5929" />
+          <entry key="js" value="5671" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="3746" />
-          <entry key="HTML" value="5376" />
-          <entry key="JavaScript" value="5095" />
+          <entry key="CSS" value="3999" />
+          <entry key="HTML" value="5929" />
+          <entry key="JavaScript" value="5671" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Caravel/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="141" column="25" lean-forward="true" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#button#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -126,6 +129,10 @@
         <option value="$PROJECT_DIR$/Caravel/css/index.css" />
         <option value="$PROJECT_DIR$/Caravel/comentarios.html" />
         <option value="$PROJECT_DIR$/Caravel/index.html" />
+        <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/estilos.css" />
+        <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/index.js" />
+        <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/index.html" />
+        <option value="$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/estilos.css" />
       </list>
     </option>
   </component>
@@ -136,8 +143,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="44" />
-    <option name="y" value="21" />
+    <option name="x" value="100" />
+    <option name="y" value="20" />
     <option name="width" value="1400" />
     <option name="height" value="820" />
   </component>
@@ -158,13 +165,37 @@
             <path>
               <item name="webdesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="webdesign" type="462c0819:PsiDirectoryNode" />
-              <item name="Caravel" type="462c0819:PsiDirectoryNode" />
+              <item name="fw2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="webdesign" type="b2602c69:ProjectViewProjectNode" />
               <item name="webdesign" type="462c0819:PsiDirectoryNode" />
-              <item name="Caravel" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="fw2" type="462c0819:PsiDirectoryNode" />
+              <item name="trabalho classroom" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webdesign" type="462c0819:PsiDirectoryNode" />
+              <item name="fw2" type="462c0819:PsiDirectoryNode" />
+              <item name="trabalho classroom" type="462c0819:PsiDirectoryNode" />
+              <item name="Trabalhos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webdesign" type="462c0819:PsiDirectoryNode" />
+              <item name="fw2" type="462c0819:PsiDirectoryNode" />
+              <item name="trabalho classroom" type="462c0819:PsiDirectoryNode" />
+              <item name="Trabalhos" type="462c0819:PsiDirectoryNode" />
+              <item name="Aplicação 2 - Enquete Eleitoral" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="webdesign" type="b2602c69:ProjectViewProjectNode" />
+              <item name="webdesign" type="462c0819:PsiDirectoryNode" />
+              <item name="fw2" type="462c0819:PsiDirectoryNode" />
+              <item name="trabalho classroom" type="462c0819:PsiDirectoryNode" />
+              <item name="Trabalhos" type="462c0819:PsiDirectoryNode" />
+              <item name="Aplicação 2 - Enquete Eleitoral" type="462c0819:PsiDirectoryNode" />
+              <item name="Imagens" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -175,7 +206,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Insterestellar" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RunDashboard">
@@ -212,11 +243,14 @@
       <workItem from="1538792982128" duration="7418000" />
       <workItem from="1538849951124" duration="7799000" />
       <workItem from="1538861369418" duration="270000" />
+      <workItem from="1538927436810" duration="5214000" />
+      <workItem from="1538963520419" duration="1002000" />
+      <workItem from="1539029027241" duration="121000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70243000" />
+    <option name="totallyTimeSpent" value="76580000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -245,6 +279,17 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/index.js</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/app.js">
@@ -292,31 +337,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/index.html" />
-    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="45" lean-forward="true" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/login.html" />
     <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/jogo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
           <caret line="11" column="42" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/funcoes.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/estilos.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -358,13 +383,43 @@
     <entry file="file://$PROJECT_DIR$/Caravel/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="73">
-          <caret line="141" column="25" lean-forward="true" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
-          <folding>
-            <element signature="n#style#0;n#button#2;n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <caret line="141" column="25" selection-start-line="141" selection-start-column="25" selection-end-line="141" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/Imagens/estilos.css" />
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/funcoes.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 1 - Tamagochi/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="33" column="21" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fw2/trabalho classroom/Trabalhos/Aplicação 2 - Enquete Eleitoral/estilos.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="22" column="28" lean-forward="true" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slideshow de figuras utilizando setTimeou</title>
+    <script>
+        // Controla o cronometro do slideshow
+        var g_cronometro;
+        var imagem;
+        // Ativa slideshow
+        function iniciar() {
+            g_cronometro = setTimeout(iniciar,1500);
+            if (imagem <= 3) {
+                document.getElementById('imagem').src = 'imagens/figura'+imagem+'.png';
+                imagem++
+                
+            }else{
+                imagem = 0
+            }
+        }
+        
+        // Desativa slideshow
+        function pausar() {
+            clearTimeout(g_cronometro);
+        }
+        
+    </script>
+</head>
+<body onload="iniciar()">
+     <img src="imagens/figura1.png" id="imagem"  onmouseover="pausar()" onmouseout="iniciar()"><br> 
+     <p>Figura:<span id="legendaFigura"></span></p>
+</body>
+</html>

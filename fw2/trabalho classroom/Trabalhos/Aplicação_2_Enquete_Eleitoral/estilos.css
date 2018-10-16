@@ -1,0 +1,30 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+.pNome{
+    font-family: Arial;
+    font-size: 16px;
+}
+.pCandidatos{
+    font-family: Arial;
+    font-size: 18px;
+    color: red;
+}
+.divPrincipal{
+    width: 250px;
+    padding: 15px;
+    margin: 2px;
+    text-align: center;
+}
+.divCandidato{
+    background-color: #c3d79c;
+    border: 3px solid black;
+    transition: all 0.4s;
+}
+.votos{
+    font-family: Arial;
+    font-size: 18px;
+    color: red;
+}
