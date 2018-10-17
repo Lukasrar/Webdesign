@@ -35,16 +35,16 @@ function fecharFooter3() {
 
 //Ativar animate.css nos campos que foram submetidos
 function animateTest(idCampo) {
-    $(idCampo).classList.add('headShake');
+    $(idCampo).classList.add('bounce');
     var timer = setTimeout(function () {
-        $(idCampo).classList.remove('headShake')
+        $(idCampo).classList.remove('bounce')
     },1000)
 }
 //Ativar animate.css nos campos que foram submetidos
 function animateUl(idCampo) {
-    $(idCampo).classList.add('flipInY');
+    $(idCampo).classList.add('bounceIn');
     var timer = setTimeout(function () {
-        $(idCampo).classList.remove('flipInY')
+        $(idCampo).classList.remove('bounceIn')
     },500)
 }
 
