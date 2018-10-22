@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <title>Caravel</title>
+  </head>
+  <body onload="trocarFrase()">
+    <header>
+        <a name="topo">
+        <nav>
+          <ul>
+              <img src="./logo/CaravelPositiva.png" alt="" class="animated slideInDown logoNav">
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#cases">Cases</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#home">Home</a></li>
+          </ul>
+      </nav>
+
+        <div class="sideBar" onclick="openSlideMenu()">
+            <input type="checkbox" id="bt_menu" class="btnNav">
+            <label for="bt_menu" id="btnNav">&#9776;</label>
+        </div>
+        <div id="side-menu" class="side-nav">
+            <img src="./logo/CaravelPositiva.png" alt="" class="animated slideInDown logoSideNav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()" id="fechar">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cases">Cases</a>
+            <a href="#sobre">Clientes</a>
+            <a href="#contato">Contato</a>
+        </div>
+
+    </header>
+    <div class="imagemHeader"></div>
+    <a name="home"></a>
+    <div class="divHeader">
+      <div class="animated slideInLeft border">
+          <h1 class="h1Style h1Header">MARES CALMOS NÃO FAZEM UM BOM MARINHEIRO</h1>
+          <p class="pStyle pHeader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aspernatur officia odio, estias, commodi debitis quidem, impedit assumenda quasi excepturi.</p>
+          <a href="#contato"><button type="button" name="button" class="animated infinite pulse btnHeader styleBtnHeader">FALE COM A GENTE</button></a>
+      </div>
+    </div>
+
+    <a name="sobre">
+
+    <section>
+        <article>
+            <div class="col-dg-10 col-dm-10 col-12 sobre divResponsivo">
+                  <h1 class="h1Style">Sobre a Caravel</h1>
+                  <p class="pStyle">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptas explicabo in,
+                      accusantium ipsum quo ab minus accusamus, natus architecto quidem inventore sapiente
+                      laudantium omnis praesentium. Ver,  impedit, a eaque placeat  laboriosam!
+                      Magni incidunt vel numquam atque?
+                  </p>
+                  <div class="imagens">
+                      <img src="./imagens/Fotos/Foto1.png" alt="" class="foto">
+                      <img src="./imagens/Fotos/Foto2.png" alt="" class="foto">
+                      <img src="./imagens/Fotos/Foto3.png" alt="" class="foto">
+                  </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="linha"></div>
+
+    <a name="cases">
+
+    <section class="conteudo">
+        <div class="cases">
+            <p class="pCases">548<br> PROJETOS COMPLETOS</p>
+            <p class="pCases">1465<br> HORAS TRABALHADAS</p>
+            <p class="pCases">612<br> FEEDBACKS POSITIVOS</p>
+            <p class="pCases">735<br> CLIENTES SATISFEITOS</p>
+        </div>
+        <div class="col-dg-8 col-dm-8 col-12 galeria divResponsivo">
+            <div class="imgGaleria">
+                <img src="./imagens/Cases/Case1.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case2.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case3.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case4.png" alt="" class="imgCases">
+            </div>
+            <div class="linha"></div>
+            <div class="imgGaleria">
+                <img src="./imagens/Cases/Case5.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case6.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case7.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case8.png" alt="" class="imgCases">
+            </div>
+            <div class="linha"></div>
+            <div class="btn">
+                <button type="button" name="button" onclick="abrirGaleria()" class="btnVerCases">Ver todos os cases</button>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="servicos">
+
+    <section>
+         <article>
+             <div class="col-dg-10 col-dm-10 col-12 sobre divResponsivo">
+                 <h1 class="h1Style">Serviços</h1>
+                 <p class="pStyle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptas explicabo in,
+                    accusantium ipsum quo ab minus accusamus, natus architecto quidem inventore sapiente
+                    laudantium omnislaat officiis laboriosam!
+                    Magni incidunt vel numquam atque?
+                 </p>
+                 <div class="divImgServiços">
+                     <img src="./imagens/Serviços/Serviços.jpg" alt="" class="imgServiços">
+                 </div>
+             </div>
+         </article>
+    </section>
+
+    <div class="linha"></div>
+
+
+    <section>
+         <article>
+             <div class="col-dg-10 col-dm-10 col-12 frases divResponsivo" style="width: 100%; margin-bottom: 0" id="divFrase">
+                <p class="pStyle" id="frases"></p>
+                <p class="pStyle" id="autor"></p>
+             </div>
+         </article>
+    </section>
+
+
+    <div class="divFrase">
+        <img src="./imagens/Frase/Frase.jpg" alt="" class="imgFrase">
+    </div>
+
+    <a name="clientes">
+
+    <div class="col-dg-8 col-dm-8 col-12 divClientes divResponsivo">
+        <img src="./imagens/Clientes/Cliente1.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente2.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente3.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente4.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente5.png" alt="" class="imgClientes">
+    </div>
+
+    <div class="linha"></div>
+
+    <a name="contato">
+
+    <div class="col-dg-10 col-dm-10 formulario">
+        <h1 class="h1Style">Vamos conversar ?</h1>
+        <p class="pStyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sunt, voluptate expedita minima quasi! am eligendi iste.</p>
+        <input type="text" name="" value="" placeholder="Nome:" class="inputs">
+        <input type="text" name="" value="" placeholder="Email:" class="inputs">
+        <input type="text" name="" value="" placeholder="Assunto:" class="inputs">
+        <input type="text" name="" value="" placeholder="Mensagem:" class="inputs">
+
+        <div class="btn">
+          <button type="button" name="button" onclick="abrirGaleria()" class="btnEnviar">ENVIAR MENSAGEM</button>
+        </div>
+    </div>
+
+
+    <footer class="footer" style="margin-top: 0">
+
+        <div class="divFlex">
+
+            <div class="direitoAutoral">
+                <img src="./logo/CaravelNegativa.png" alt="" class="logo logoFooter">
+                <p class="pDireitoAutoral">©2018 Caravel. All rights reserved</p>
+            </div>
+
+            <div class="footerEmail">
+              <p class="pFooter">hooray@caravel.com</p>
+              <p class="pFooter">+55 34 987 065 908</p>
+            </div>
+
+            <div class="mapaSite">
+              <a href="#sobre" class="ancoras">Sobre</a>
+              <a href="#cases" class="ancoras">Cases</a>
+              <a href="#servicos" class="ancoras">Serviços</a>
+              <a href="#clientes" class="ancoras">Clientes</a>
+              <a href="" class="ancoras">Blog</a>
+            </div>
+
+            <div class="mapaSite">
+              <a href="" class="ancoras">Facebook</a>
+              <a href="" class="ancoras">Twitter</a>
+              <a href="" class="ancoras">Instagram
+              <a href="#topo" class="ancoras">Voltar ao topo</a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/funcoes.js"></script>
+  </body>
+</html>
