@@ -1,0 +1,120 @@
+<!-- <%@page contentType="text/html" pageEncoding="UTF-8"%> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+       	<style type="text/css">
+       		.linha{
+       			width:100%;
+       			height:250px;
+       			text-align: center;
+       		}
+       		img {
+       			border:solid 1px black;
+       		}
+       		h1{
+       			text-align: center;
+       			margin-bottom: 20px;
+       		}
+                input[type=submit]{
+                    text-align: center;
+                }
+       	</style>
+<!--         <%
+        String jogador1 = (String)request.getAttribute("player1");  
+        String jogador2 = (String)request.getAttribute("player2");
+        String table = (String)request.getAttribute("table");
+        String vez = (String)request.getAttribute("vez");
+        String vencedor = (String)request.getAttribute("vencedor");
+        String jogador = "";
+        if(vez.equalsIgnoreCase("1")){
+            jogador = jogador1;
+            vez = "0";
+        } else {
+            jogador = jogador2;
+             vez = "1";
+        }
+                    
+        %> -->
+       	<script type="text/javascript">
+                jogou = true;
+                jogador = <%=vez%>;
+                tabuleiro = "<%=table%>";
+       		function iniciar(){
+                    tabuleiro = tabuleiro.split(",");
+                    for(i = 8; i >= 0; i--){
+                       document.getElementById(""+i).src = "./img/"+tabuleiro[i]+".png";
+                    }
+       		}
+                function marcar(x){
+                    if(jogou == true){
+                        if(jogador === 0){
+                            if(document.getElementById(x).src == "http://localhost:8080/jogoDaVelha2/img/a.png"){
+                                jogou = false;
+                                document.getElementById(x).src = "./img/o.png";
+                                tabuleiro[x] = "o";
+                            } else {
+                                alert("ja escolheu esse lugar");
+                            }
+                        } else {
+                            if(document.getElementById(x).src == "http://localhost:8080/jogoDaVelha2/img/a.png"){
+                                jogou = false;
+                                document.getElementById(x).src= "./img/x.png";
+                                tabuleiro[x] = "x";
+                            } else {
+                                alert("ja escolheu esse lugar");
+                            }
+                        }
+                    } else {
+                        alert("Você ja marcou a sua jogada");
+                    }
+                    
+                }
+                function mandar(){
+                    if (tabuleiro[0] == tabuleiro[1] && tabuleiro[1] == tabuleiro[2] && tabuleiro[0] != "a" || tabuleiro[3] == tabuleiro[4] && tabuleiro[4] == tabuleiro[5] && tabuleiro[3] != "a"
+                                    || tabuleiro[6] == tabuleiro[7] && tabuleiro[7] == tabuleiro[8] && tabuleiro[6] != "a") {
+                            document.getElementById("vencedor").value="t";
+
+                    } else if (tabuleiro[0] == tabuleiro[3] && tabuleiro[3] == tabuleiro[6] && tabuleiro[0] != "a" || tabuleiro[1] == tabuleiro[4] && tabuleiro[4] == tabuleiro[7] && tabuleiro[1] != "a"
+                                    || tabuleiro[2] == tabuleiro[5] && tabuleiro[5] == tabuleiro[8] && tabuleiro[2] != "a") {
+                            document.getElementById("vencedor").value="t";
+
+                    } else if (tabuleiro[0] == tabuleiro[4] && tabuleiro[4] == tabuleiro[8] && tabuleiro[0] != "a" || tabuleiro[6] == tabuleiro[4] && tabuleiro[4] == tabuleiro[2] && tabuleiro[6] != "a") {
+                            document.getElementById("vencedor").value="t";
+                    }
+                    document.getElementById("table").value= tabuleiro.toString();
+                    document.getElementById("jogo").submit();
+                }
+       	</script>
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body onload="iniciar()">
+        <h1 class="h1Jogo">JOGO DA VELHA <!-- <%= jogador%> --></h1>
+        <div class="Jogo">
+        	<form id="jogo" action="Servlet">
+                    <input id="vencedor" type="hidden" name="vencedor" value="<%=vencedor%>">
+                    <input id="jogador1" type="hidden" name="player1" value="<%=jogador1%>">
+                    <input id="jogador2" type="hidden" name="player2" value="<%=jogador2%>">
+                    <input id="table" type="hidden" name="table" value="">
+                    <input id="vez" type="hidden" name="vez" value="<%=vez%>">
+                    <div class="linha">
+                        <img id="0" onclick="marcar('0')" src="./img/.png" class="jogadas">
+                        <img id="1" onclick="marcar('1')" src="./img/.png" class="jogadas">
+                        <img id="2" onclick="marcar('2')" src="./img/.png" class="jogadas">
+                    </div>
+                    <div class="linha">
+                        <img id="3" onclick="marcar('3')" src="./img/a.png" class="jogadas">
+                        <img id="4" onclick="marcar('4')" src="./img/a.png" class="jogadas">
+                        <img id="5" onclick="marcar('5')" src="./img/a.png" class="jogadas">
+                    </div>
+                    <div class="linha">
+                        <img id="6" onclick="marcar('6')" src="./img/a.png" class="jogadas">
+                        <img id="7" onclick="marcar('7')" src="./img/a.png" class="jogadas">
+                        <img id="8" onclick="marcar('8')" src="./img/a.png" class="jogadas">
+                    </div>
+                    <center><input type="button" onclick="mandar()" value="JOGAR"></center>
+        	</form>
+        </div>
+    </body>
+</html>
