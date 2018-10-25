@@ -269,6 +269,7 @@ textarea {
     margin: 10px;
 }
 .pIcones {
+    font-size: 35px;
     text-align: center;
     color: black;
 }
@@ -287,6 +288,12 @@ textarea {
 header {
     margin: 0px 0px 0px 0px;
 }
+.dashBoard {
+    text-align: center;
+    margin: 20px;
+    font-size: 30px;
+    color: white;
+}
 .divComentarios{
     display: flex;
     justify-content: center;
@@ -298,18 +305,22 @@ header {
     width: 500px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #111111;
+    background-color: #FDA50F;
 }
 .tituloComentario{
-    color: #FDA50F;
+    font-size: 25px;
+    color: #1b1e21;
     margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid black;
 }
 .pAppend {
-    font-size: 20px;
-    color: gray;
-    text-align: justify;
-    text-justify: inter-word;
+    font-size: 18px;
+    color: #1b1e21;
+    text-align: center;
+    margin: 5px;
 }
 }
 [class^="col-"] {
@@ -379,6 +390,19 @@ header {
     }
     .formulario {
         width: 100%;
+    }
+    .divComentarios{
+        width: 600px;
+    }
+    .dashBoard{
+        font-size: 40px;
+    }
+    .tituloComentario{
+        font-size: 36px;
+    }
+    .pAppend {
+        font-size: 33px;
+        margin: 10px;
     }
     input[type="text"], input[type="password"]{
         margin-bottom: 20px;
