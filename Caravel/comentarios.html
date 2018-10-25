@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caravel Fitness Park</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
+          integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+    <style type="text/css">
+        .container{
+            max-width: 960px;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin: auto;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="appendNoSite()">
+<header>
+    <nav>
+        <ul class="animated slideInDown">
+            <li><a href="#faleConosco" id="btn1" onmouseover="animateUl('btn1')" class="animated ">FALE CONOSCO</a></li>
+            <li><a href="#sobre" id="btn2" onmouseover="animateUl('btn2')" class="animated ">QUEM SOMOS</a></li>
+            <li><a href="#treinos" id="btn3" onmouseover="animateUl('btn3')" class="animated ">TREINOS/AULAS</a></li>
+            <li><a href="#" id="btn4" onmouseover="animateUl('btn4')" class="animated " onclick="abreDivLogin()">ADM LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="sideBar" onclick="openSlideMenu()">
+        <input type="checkbox" id="bt_menu" class="btnNav">
+        <label for="bt_menu">&#9776;</label>
+    </div>
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#faleConosco">FALE CONOSCO</a>
+        <a href="#sobre">QUEM SOMOS</a>
+        <a href="#treinos">TREINOS/AULAS</a>
+        <a href="#" onclick="abreDivLogin()">ADM LOGIN</a>
+    </div>
+</header>
+
+<div id="javascript">
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
+<script src="funcoes.js"></script>
+<script src="comentarios.js"></script>
+</body>
+</html>
