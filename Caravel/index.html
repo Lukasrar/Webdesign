@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="favIcon.png" />
-    <title>Caravel Fitness Park</title>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./css/estilos.css">
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
@@ -12,158 +11,198 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
           integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw"
           crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/index.css">
-    <style type="text/css">
-        .container{
-            max-width: 960px;
-            padding-left: 1rem;
-            padding-right: 1rem;
-            margin: auto;
-            text-align: center;
-        }
-    </style>
-</head>
-<body onload="start()">
-<header>
-    <nav>
-        <ul class="animated slideInDown">
-            <li><a href="#faleConosco" id="btn1" onmouseover="animateUl('btn1')" class="animated ">FALE CONOSCO</a></li>
-            <li><a href="#sobre" id="btn2" onmouseover="animateUl('btn2')" class="animated ">QUEM SOMOS</a></li>
-            <li><a href="#treinos" id="btn3" onmouseover="animateUl('btn3')" class="animated ">TREINOS/AULAS</a></li>
-            <li><a href="#" id="btn4" onmouseover="animateUl('btn4')" class="animated " onclick="abreDivLogin()">ADM LOGIN</a></li>
-            <li class="hide" id="comentarios"><a href="comentarios.html" target="_blank" onmouseover="animateUl('comentarios')" class="animated ">COMENTÁRIOS</a></li>
-        </ul>
-    </nav>
-    <div class="sideBar" onclick="openSlideMenu()">
-        <input type="checkbox" id="bt_menu" class="btnNav">
-        <label for="bt_menu">&#9776;</label>
-    </div>
-    <div id="side-menu" class="side-nav">
-        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-        <a href="#faleConosco">FALE CONOSCO</a>
-        <a href="#sobre">QUEM SOMOS</a>
-        <a href="#treinos">TREINOS/AULAS</a>
-        <a href="#" onclick="abreDivLogin()">ADM LOGIN</a>
-        <div class="hide" id="sideNavComentarios">
-            <a href="comentarios.html" onclick="abreDivLogin()">COMENTÁRIOS</a>
+    <title>Caravel</title>
+  </head>
+  <body onload="trocarFrase()">
+    <header>
+        <a name="topo">
+        <nav>
+          <ul>
+              <img src="./logo/CaravelPositiva.png" alt="" class="animated slideInDown logoNav">
+              <li><a href="#contato">Contato</a></li>
+              <li><a href="#clientes">Clientes</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#cases">Cases</a></li>
+              <li><a href="#sobre">Sobre</a></li>
+              <li><a href="#home">Home</a></li>
+          </ul>
+      </nav>
+
+        <div class="sideBar" onclick="openSlideMenu()">
+            <input type="checkbox" id="bt_menu" class="btnNav">
+            <label for="bt_menu" id="btnNav">&#9776;</label>
+        </div>
+        <div id="side-menu" class="side-nav">
+            <img src="./logo/CaravelPositiva.png" alt="" class="animated slideInDown logoSideNav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()" id="fechar">&times;</a>
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#cases">Cases</a>
+            <a href="#sobre">Clientes</a>
+            <a href="#contato">Contato</a>
         </div>
 
+    </header>
+    <div class="imagemHeader"></div>
+    <a name="home"></a>
+    <div class="divHeader">
+      <div class="animated slideInLeft border">
+          <h1 class="h1Style h1Header">MARES CALMOS NÃO FAZEM UM BOM MARINHEIRO</h1>
+          <p class="pStyle pHeader">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus aspernatur officia odio, estias, commodi debitis quidem, impedit assumenda quasi excepturi.</p>
+          <a href="#contato"><button type="button" name="button" class="animated infinite pulse btnHeader styleBtnHeader">FALE COM A GENTE</button></a>
+      </div>
     </div>
-</header>
 
-<div class="divLoginCss" id="loginAdm">
-    <h2 class="tituloLogin">Login Administrador</h2>
-    <form id="LoginForm">
-        <input type="text" class="formAdm" placeholder="Informe seu email" id="emailLogin">
-        <input type="password" class="formAdm" placeholder="Informe sua senha" id="senhaLogin">
-        <button type="button" class="btn" style="background-color: #218838" id="btnLogin">Entrar</button>
-        <button type="button" class="btn" onclick="fechaDivLogin()" style="background-color: #8D230F">Fechar</button>
-        <button class="btn hide" id="btnLogout" style="background-color: #eb4d4b;">Logout</button>
-    </form>
-</div>
+    <a name="sobre">
 
-<div class="pimg1">
-    <div class="logoDiv">
-            <span class="border">
-                <img src="Logo Caravel Fitness Park-01.png" class="animated zoomInDown logo"><br>
-                <img src="imagens/seta.png" class="animated infinite bounce seta">
-            </span>
+    <section>
+        <article>
+            <div class="col-dg-10 col-dm-10 col-12 sobre divResponsivo">
+                  <h1 class="h1Style">Sobre a Caravel</h1>
+                  <p class="pStyle">
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptas explicabo in,
+                      accusantium ipsum quo ab minus accusamus, natus architecto quidem inventore sapiente
+                      laudantium omnis praesentium. Ver,  impedit, a eaque placeat  laboriosam!
+                      Magni incidunt vel numquam atque?
+                  </p>
+                  <div class="imagens">
+                      <img src="./imagens/Fotos/Foto1.png" alt="" class="foto">
+                      <img src="./imagens/Fotos/Foto2.png" alt="" class="foto">
+                      <img src="./imagens/Fotos/Foto3.png" alt="" class="foto">
+                  </div>
+            </div>
+        </article>
+    </section>
+
+    <div class="linha"></div>
+
+    <a name="cases">
+
+    <section class="conteudo">
+        <div class="cases">
+            <p class="pCases">548<br> PROJETOS COMPLETOS</p>
+            <p class="pCases">1465<br> HORAS TRABALHADAS</p>
+            <p class="pCases">612<br> FEEDBACKS POSITIVOS</p>
+            <p class="pCases">735<br> CLIENTES SATISFEITOS</p>
+        </div>
+        <div class="col-dg-8 col-dm-8 col-12 galeria divResponsivo">
+            <div class="imgGaleria">
+                <img src="./imagens/Cases/Case1.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case2.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case3.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case4.png" alt="" class="imgCases">
+            </div>
+            <div class="linha"></div>
+            <div class="imgGaleria">
+                <img src="./imagens/Cases/Case5.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case6.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case7.png" alt="" class="imgCases">
+                <img src="./imagens/Cases/Case8.png" alt="" class="imgCases">
+            </div>
+            <div class="linha"></div>
+            <div class="btn">
+                <button type="button" name="button" onclick="abrirGaleria()" class="btnVerCases">Ver todos os cases</button>
+            </div>
+        </div>
+
+    </section>
+
+    <a name="servicos">
+
+    <section>
+         <article>
+             <div class="col-dg-10 col-dm-10 col-12 sobre divResponsivo">
+                 <h1 class="h1Style">Serviços</h1>
+                 <p class="pStyle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptas explicabo in,
+                    accusantium ipsum quo ab minus accusamus, natus architecto quidem inventore sapiente
+                    laudantium omnislaat officiis laboriosam!
+                    Magni incidunt vel numquam atque?
+                 </p>
+                 <div class="divImgServiços">
+                     <img src="./imagens/Serviços/Serviços.jpg" alt="" class="imgServiços">
+                 </div>
+             </div>
+         </article>
+    </section>
+
+    <div class="linha"></div>
+
+
+    <section>
+         <article>
+             <div class="col-dg-10 col-dm-10 col-12 frases divResponsivo" style="width: 100%; margin-bottom: 0" id="divFrase">
+                <p class="pStyle" id="frases"></p>
+                <p class="pStyle" id="autor"></p>
+             </div>
+         </article>
+    </section>
+
+
+    <div class="divFrase">
+        <img src="./imagens/Frase/Frase.jpg" alt="" class="imgFrase">
     </div>
-</div>
-<a name="treinos"></a>
-<section>
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection1.jpg" class="animated imgArticle1" id="img1" onmouseover="animateTest('img1')" onclick="animateTest('img1')">
-        <h2 class="titulos">Power Lifting</h2>
-        <p class="textJustify">O powerlifting é um desporto de força, cujo objetivo do atleta é levantar
-            o maior peso possível em cada um dos movimentos pelos quais este desporto é composto;
-            o movimento de agachamento, supino e o peso morto. O powerlifting foi oficialmente reconhecido
-            como um desporto em 1960, e em 1973 foi fundada a sua primeira federação internacional a IPF – International Powerlifting Federation.
-        </p>
 
+    <a name="clientes">
+
+    <div class="col-dg-8 col-dm-8 col-12 divClientes divResponsivo">
+        <img src="./imagens/Clientes/Cliente1.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente2.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente3.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente4.png" alt="" class="imgClientes">
+        <img src="./imagens/Clientes/Cliente5.png" alt="" class="imgClientes">
     </div>
 
     <div class="linha"></div>
 
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection2.jpeg" class="animated imgArticle2" id="img2" onmouseover="animateTest('img2')" onclick="animateTest('img2')">
-        <h2 class="titulos">Musculação</h2>
-        <p class="textJustify">A Musculação é um meio de treinamento ou uma modalidade na qual se integram as
-            principais áreas de conhecimento sobre o comportamento fisiológico e motor do corpo humano, objetivando
-            entender e explicar as adaptações crônicas e agudas, decorrentes da aplicação de diversas estratégias e
-            técnicas de treinamento. O treinamento de força é uma das ferramentas utilizadas na modalidade Musculação,
-            que aborda também o treinamento aeróbico, o treinamento de flexibilidade e possibilidades de intervenções
-            profiláticas em alguns dos principais desvios posturais.
-        </p>
-    </div>
+    <a name="contato">
 
-    <div class="linha"></div>
+    <div class="col-dg-10 col-dm-10 formulario">
+        <h1 class="h1Style">Vamos conversar ?</h1>
+        <p class="pStyle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque sunt, voluptate expedita minima quasi! am eligendi iste.</p>
+        <input type="text" name="" value="" placeholder="Nome:" class="inputs">
+        <input type="text" name="" value="" placeholder="Email:" class="inputs">
+        <input type="text" name="" value="" placeholder="Assunto:" class="inputs">
+        <input type="text" name="" value="" placeholder="Mensagem:" class="inputs">
 
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection3.jpg" class="animated imgArticle1" id="img3" onmouseover="animateTest('img3')" onclick="animateTest('img3')">
-        <h2 class="titulos">Crossfit</h2>
-        <p class="textJustify">Crossfit é uma marca registrada internacionalmente pela CrossFit Inc., empresa
-            norte-americana responsável por criar o método de treinamento que virou febre em todo o mundo por
-            abordar diversas capacidades do corpo humano. Criado por Greg Glassman, o crossfit é um treinamento
-            que une levantamento de peso olímpico, ginástica, atletismo e outras modalidades em atividades de alta intensidade.
-        </p>
-    </div>
-
-    <div class="linha"></div>
-
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports">
-        <img src="./imagens/imgSection4.jpg" class="animated imgArticle2" id="img4" onmouseover="animateTest('img4')" onclick="animateTest('img4')">
-        <h2 class="titulos">Spinning</h2>
-        <p class="textJustify">Spinning é um programa de treino cardiovascular que se adequa ao condicionamento físico de cada
-            praticante e é feito sobre uma bicicleta de spinning, criada para oferecer treinamento intenso. A aula de spinning
-            abrange 2 componentes principais: o mental e o físico. A forma mental de quem faz spinning é um fator importante,
-            pois é ela que vai fazer com que o praticante consiga chegar até o fim dos 40 minutos (geralmente o tempo que dura a
-            aula) de pedaladas intensas sem desistir. Já a parte física tende a melhorar a cada aula.
-        </p>
-    </div>
-
-    <div class="linha"></div>
-</section>
-<div class="linha"></div>
-<a name="faleConosco"></a>
-<section class="sectionForm">
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports" style="margin-bottom: 0">
-        <h3 class="titulos">Fale Conosco</h3>
-        <form class="formulario" id="formularioDeContato">
-            <input type="text" placeholder="Informe seu nome" id="nome" required>
-            <input type="text" placeholder="Informe seu email" id="email" required>
-            <textarea placeholder="Informe seu comentário" id="mensagem" required></textarea>
-            <button class="btnForm" type="submit">Enviar</button>
-            <div class="animated formSucess" id="sucesso">Seu comentário foi enviado com sucesso!</div>
-        </form>
-    </div>
-</section>
-
-<div class="linha"></div>
-<a name="sobre"></a>
-<footer class="footer" style="margin-top: 0">
-    <div class="col-dg-8 col-dm-12 col-12 sectionSports" style="margin-bottom: 0">
-        <h3 class="tituloFooter">Sobre</h3>
-        <p class="pFooter">A academia Caravel Fitness Park tem como objetivo abranger a maior escala de esportes em um só espaço. Tudo isso
-            com um preço acessível. Venha treinar conosco.
-        </p>
-        <h3 class="tituloFooter">Contatos</h3>
-        <div class="divIcones" onmouseover="abrirFooter1()" onmouseout="fecharFooter1()" onclick="abrirFooter1()">
-            <img src="imagens/icone-01.png" class="icones" >
-            <p id="icone1" class="pIcones">XXX. XXXXXXXXXXX</p>
-        </div>
-        <div class="divIcones" onmouseover="abrirFooter2()" onmouseout="fecharFooter2()" onclick="abrirFooter2()">
-            <img src="imagens/icone-02.png" class="icones">
-            <p id="icone2" class="pIcones">34 99222-1743</p>
-        </div>
-        <div class="divIcones" onmouseover="abrirFooter3()" onmouseout="fecharFooter3()" onclick="abrirFooter3()">
-            <img src="imagens/icone-03.png" class="icones">
-            <p id="icone3" class="pIcones">@lukaswp</p>
+        <div class="btn">
+          <button type="button" name="button" onclick="abrirGaleria()" class="btnEnviar">ENVIAR MENSAGEM</button>
         </div>
     </div>
-</footer>
-<script src="https://www.gstatic.com/firebasejs/5.5.3/firebase.js"></script>
-<script src="funcoes.js"></script>
-<script src="firebase.js"></script>
-</body>
+
+
+    <footer class="footer" style="margin-top: 0">
+
+        <div class="divFlex">
+
+            <div class="direitoAutoral">
+                <img src="./logo/CaravelNegativa.png" alt="" class="logo logoFooter">
+                <p class="pDireitoAutoral">©2018 Caravel. All rights reserved</p>
+            </div>
+
+            <div class="footerEmail">
+              <p class="pFooter">hooray@caravel.com</p>
+              <p class="pFooter">+55 34 987 065 908</p>
+            </div>
+
+            <div class="mapaSite">
+              <a href="#sobre" class="ancoras">Sobre</a>
+              <a href="#cases" class="ancoras">Cases</a>
+              <a href="#servicos" class="ancoras">Serviços</a>
+              <a href="#clientes" class="ancoras">Clientes</a>
+              <a href="" class="ancoras">Blog</a>
+            </div>
+
+            <div class="mapaSite">
+              <a href="" class="ancoras">Facebook</a>
+              <a href="" class="ancoras">Twitter</a>
+              <a href="" class="ancoras">Instagram
+              <a href="#topo" class="ancoras">Voltar ao topo</a>
+
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/funcoes.js"></script>
+  </body>
 </html>
