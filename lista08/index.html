@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title></title>
+    <script src="jwifi.js"></script>
+    <script type="text/javascript">
+        function verificar(idcampo){
+            var input = document.getElementById(idcampo).value; 	
+            var dataNascimento = /^\d{2}\/\d{2}.(\d{2}|\d{4})$/;
+            var cpf = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+            var matricula = /^iftm-\d{3}\/\d{3}-\w{2}$/i;
+            var disciplina = /^MT-\d\d\.\d\d\d\-IFTM$/;
+            var disciplina2 = /^MT-\d\d\.\d\d\d\-[iI][fF][tT][mM]$/;
+			var disciplina3 = /^M\s{0,1}T\s{0,1}-\d\d\.\d\d\d\-I\s{0,1}F\s{0,1}T\s{0,1}M\s{0,1}$/i;
+			var disciplina4 = /^M\s{0,1}T\s{0,1}-\d\d\.\d\d\d\-I\s{0,1}F\s{0,1}T\s{0,1}M\s{0,1}\s(Uberlandia Centro|Uberlândia)$/i;
+			var telefone = /^\W{1}\d{2,3}\(\d\d\)\d{5}\-\d{4}$/;
+            var telefone2 = /^\(\d{2,3}\)\d{5}\-\d{4}$/;
+            var faturamento = /^\w\W\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,2}$/;
+            var cronometro = /^\d{0,2}[0-23]\:\d{0,2}[0-59]\:\d{0,2}[0-59]\:\d{0,2}[0-99]$/;
+            var senha = /^$/;
+
+
+            if (idcampo == 'txtData') {
+
+	            var padrao = dataNascimento
+
+	            if (padrao.test(input)) {
+	                alert('data ok')
+
+	            }else{
+	                alert('data errada')
+	            }
+
+            }else if (idcampo == 'txtCpf') {
+
+	            var padrao = cpf
+
+	            if (padrao.test(input)) {
+	                alert('cpf ok')
+
+	            }else{
+	                alert('cpf not ok')
+	            }
+
+            }else if (idcampo == 'txtMatricula') {
+	           
+	            var padrao = matricula
+
+	            if (padrao.test(input)) {
+	                alert('matricula ok')
+
+	            }else{
+	                alert('matricula not ok')
+	            }
+
+            }else if (idcampo == 'txtDisciplina') {
+	           
+	            var padrao = disciplina
+
+	            if (padrao.test(input)) {
+	                alert('Disciplina ok')
+
+	            }else{
+	                alert('Disciplina not ok')
+	            }
+
+            }else if (idcampo == 'txtDisciplina2') {
+	           
+	            var padrao = disciplina2
+
+	            if (padrao.test(input)) {
+	                alert('Disciplina2 ok')
+
+	            }else{
+	                alert('Disciplina2 not ok')
+	            }
+
+            }else if (idcampo == 'txtDisciplina3') {
+	           
+	            var padrao = disciplina3
+
+	            if (padrao.test(input)) {
+	                alert('Disciplina3 ok')
+
+	            }else{
+	                alert('Disciplina3 not ok')
+	            }
+
+            }else if (idcampo == 'txtDisciplina4') {
+	           
+	            var padrao = disciplina4
+
+	            if (padrao.test(input)) {
+	                alert('Disciplina4 ok')
+
+	            }else{
+	                alert('Disciplina4 not ok')
+	            }
+
+            }else if (idcampo == 'txtTelefone') {
+	           
+	            var padrao = telefone
+
+	            if (padrao.test(input)) {
+	                alert('telefone ok')
+
+	            }else{
+	                alert('telefone not ok')
+	            }
+
+            }else if (idcampo == 'txtTelefone2') {
+
+                var padrao = telefone2
+
+                if (padrao.test(input)) {
+                    alert('telefone2 ok')
+
+                }else{
+                    alert('telefone2 not ok')
+                }
+
+            }
+            else if (idcampo == 'txtFaturamento') {
+
+                var padrao = faturamento
+
+                if (padrao.test(input)) {
+                    alert('faturamento ok')
+
+                }else{
+                    alert('faturamento not ok')
+                }
+
+            }
+            else if (idcampo == 'txtCronometro') {
+
+                var padrao = cronometro
+
+                if (padrao.test(input)) {
+                    alert('cronometro ok')
+
+                }else{
+                    alert('cronometro not ok')
+                }
+
+            }
+            else if (idcampo == 'txtSenha') {
+
+                var padrao = senha
+
+                if (padrao.test(input)) {
+                    alert('senha ok')
+
+                }else{
+                    alert('senha not ok')
+                }
+
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+	<div>
+		<form>
+			<label>A)</label>
+			<input type="text" name="" id="txtData">
+			<input type="submit" name="" onclick="verificar('txtData')">
+		</form>
+
+		<form>
+			<label>B)</label>
+			<input type="text" name="" id="txtCpf" onKeyPress="inserirMascara('txtCpf','xxx.xxx.xxx-xx')">
+			<input type="submit" name="" onclick="verificar('txtCpf')">
+		</form>
+
+		<form>
+			<label>C)</label>
+			<input type="text" name="" id="txtMatricula">
+			<input type="submit" name="" onclick="verificar('txtMatricula')">
+		</form>
+
+		<form>
+			<label>D)</label>
+			<input type="text" name="" id="txtDisciplina" onKeyPress="inserirMascara('txtDisciplina','xx-xx.xxx-xxxx')">
+			<input type="submit" name="" onclick="verificar('txtDisciplina')">
+		</form>
+
+		<form>
+			<label>E)</label>
+			<input type="text" name="" id="txtDisciplina2" onKeyPress="inserirMascara('txtDisciplina','xx-xx.xxx-xxxx')">
+			<input type="submit" name="" onclick="verificar('txtDisciplina2')">
+		</form>
+
+		<form>
+			<label>F)</label>
+			<input type="text" name="" id="txtDisciplina3">
+			<input type="submit" name="" onclick="verificar('txtDisciplina3')">
+		</form>
+
+		<form>
+			<label>G)</label>
+			<input type="text" name="" id="txtDisciplina4">
+			<input type="submit" name="" onclick="verificar('txtDisciplina4')">
+		</form>
+
+		<form>
+			<label>H)</label>
+			<input type="text" name="" id="txtTelefone">
+			<input type="submit" name="" onclick="verificar('txtTelefone')">
+		</form>
+
+		<form>
+			<label>I)</label>
+			<input type="text" name="" id="txtTelefone2">
+			<input type="submit" name="" onclick="verificar('txtTelefone2')">
+		</form>
+
+        <form>
+            <label style="color: red;">J)</label>
+            <input type="text" name="" id="txtFaturamento">
+            <input type="submit" name="" onclick="verificar('txtFaturamento')">
+        </form>
+        <form>
+            <label>K)</label>
+            <input type="text" name="" id="txtCronometro">
+            <input type="submit" name="" onclick="verificar('txtCronometro')">
+        </form>
+
+        <form>
+            <labe style="color: red;">l)</label>
+            <input type="text" name="" id="txtCronometro">
+            <input type="submit" name="" onclick="verificar('txtCronometro')">
+        </form>
+	</div>
+</body>
+</html>
